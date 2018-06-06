@@ -7,11 +7,13 @@ from __future__ import print_function
 
 import numpy as np
 import cv2
-import random
 import math
 import os
 
+
 cv_FILLED = -1 #instead of using cv2.FILLED
+
+# def rectangle(image, pt1, pt2)
 
 def check_no_overlap(image, x, y, height, width):
     h, w = image.shape[0], image.shape[1]
@@ -35,7 +37,7 @@ def draw_square(image, height, width):
             return None
     p1 = (start_x, start_y)
     p2 = (start_x + width, start_y + height)
-    cv2.rectangle(image, p1, p2, 255, cv_FILLED, cv2.CV_AA)
+    cv2.rectangle(image, p1, p2, 1, cv_FILLED)
     return image
 
 
@@ -69,18 +71,34 @@ def generate_example(im_size=(30,30), min_obj=1, max_obj=32, sum_surfaces=[32, 6
 
 if __name__ == "__main__":
 
-    im_per_class = 1000
-    for sum_surface in [160, 192, 224, 256]:
+    # im_per_class = 400
+    # surfaces = [x*9 for x in [32, 64, 96, 128, 160, 192, 224, 256]]
+    # for sum_surface in surfaces:
+    #     for num_obj in range(0, 21):
+    #         sum_tries = 0
+    #         directory = "/home/dico/Documents/gen_img_9090/surf" + str(sum_surface) + "_obj"+ str(num_obj)
+    #         print(directory)
+    #         if not os.path.exists(directory):
+    #             os.makedirs(directory)
+    #         for i in range(im_per_class):
+    #             image, tries = generate_example(min_obj=num_obj, max_obj=num_obj, sum_surfaces=[sum_surface])
+    #             sum_tries += tries
+    #             cv2.imwrite(directory +"/image_"+str(sum_surface)+"_"+str(num_obj)+"_"+str(i)+".png", image)
+    #         print("average number of tries per image: " + str(int(float(sum_tries)/im_per_class*100)/100.0))
+
+
+    im_per_class = 500
+    surfaces = [32, 64, 96, 128, 160, 192, 224, 256]
+    for sum_surface in surfaces:
         for num_obj in range(1, 33):
-            if sum_surface == 160 and num_obj < 26:
-                continue
             sum_tries = 0
-            directory = "generated_images/surf" + str(sum_surface) + "_obj"+ str(num_obj)
+            directory = "/home/dico/Documents/gen_img_3030/surf" + str(sum_surface) + "_obj"+ str(num_obj)
             print(directory)
             if not os.path.exists(directory):
                 os.makedirs(directory)
             for i in range(im_per_class):
                 image, tries = generate_example(min_obj=num_obj, max_obj=num_obj, sum_surfaces=[sum_surface])
                 sum_tries += tries
-                cv2.imwrite(directory +"/image_"+str(sum_surface)+"_"+str(num_obj)+"_"+str(200+i)+".png", image)
+                cv2.imwrite(directory +"/image_"+str(sum_surface)+"_"+str(num_obj)+"_"+str(i)+".png", image)
             print("average number of tries per image: " + str(int(float(sum_tries)/im_per_class*100)/100.0))
+

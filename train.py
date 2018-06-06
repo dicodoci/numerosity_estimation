@@ -34,16 +34,19 @@ from vae_test3 import VariationalAutoencoder
 
 def load_images(binarize=True):
     count = 0
-    im_per_class = 1200
-    num_images = 8 * 1 * im_per_class
+    im_per_class = 500
+    num_images = 8 * 32 * im_per_class
     (x_size, y_size) = (30, 30)
     x = np.empty((num_images, y_size, x_size, 1), int)
     y = np.empty((num_images,), int)
-    for sum_surface in [32, 64, 96, 128, 160, 192, 224, 256]:
-        for num_obj in range(20, 21):
-            directory = "generated_images/surf" + str(sum_surface) + "_obj"+ str(num_obj)
+    surfaces = [32, 64, 96, 128, 160, 192, 224, 256]
+    for sum_surface in surfaces:
+        for num_obj in range(1, 33):
+            directory = "/home/dico/Documents/gen_img_3030/surf" + str(sum_surface) + "_obj"+ str(num_obj)
             for i in range(im_per_class):
                 temp_data = cv2.imread(directory + "/image_" + str(sum_surface) + "_" + str(num_obj) + "_" + str(i) + ".png", 0)
+                if temp_data is None:
+                    print("could not load image: " + directory + "/image_" + str(sum_surface) + "_" + str(num_obj) + "_" + str(i) + ".png")
                 x[count] = np.expand_dims(temp_data, -1)
                 y[count] = num_obj
                 count += 1
@@ -77,11 +80,13 @@ def train_vae(config):
     # save_path = "/models/model30.ckpt"
     save_path = config.model_path + "model" + config.model_name + ".ckpt"
     load_model = False
+    save_model = True
 
     # Load dataset
     x_train, x_test = load_images(binarize=True)
     print(x_train.shape)
     print(x_test.shape)
+    print("z_dim: %d  " % config.z_dim)
     n_samples, im_height, im_width, _ = x_train.shape
 
     # Data pipeline
@@ -214,9 +219,9 @@ def train_vae(config):
 
             # Switch to train data
             sess.run(init_train_data_op)
-
-    save_path = saver.save(sess, save_path)
-    print("Model saved in path: %s" % save_path)
+    if save_model:
+        save_path = saver.save(sess, save_path)
+        print("Model saved in path: %s" % save_path)
     # show some generated samples
     # show_samples(sess, model)
 
@@ -232,8 +237,8 @@ if __name__ == '__main__':
 
     # Training params
     parser.add_argument('--batch_size', type=int, default=256, help='Number of examples to process in a batch')#default=100
-    parser.add_argument('--learning_rate', type=float, default=0.01, help='Learning rate')#default=0.003
-    parser.add_argument('--num_epochs', type=int, default=30, help='Number of training epochs')#default=1000
+    parser.add_argument('--learning_rate', type=float, default=0.005, help='Learning rate')#default=0.003
+    parser.add_argument('--num_epochs', type=int, default=10, help='Number of training epochs')#default=1000
 
     # Print, sampling and testing frequency
     parser.add_argument('--print_every', type=int, default=25, help='Frequency of printing model train performance')
@@ -241,11 +246,11 @@ if __name__ == '__main__':
     parser.add_argument('--test_every', type=int, default=200, help='Frequency of testing model performance')
 
     # Misc params
-    parser.add_argument('--gpu_mem_frac', type=float, default=0.5, help='Fraction of GPU memory to allocate')#default=0.5
+    parser.add_argument('--gpu_mem_frac', type=float, default=0.7, help='Fraction of GPU memory to allocate')#default=0.5
     parser.add_argument('--log_device_placement', type=bool, default=False, help='Log device placement for debugging')
-    parser.add_argument('--summary_path', type=str, default="./logs/", help='Output path for summaries')#default="./summaries/"
-    parser.add_argument('--model_path', type=str, default="./models/", help='Output path for the model')
-    parser.add_argument('--model_name', type=str, default="100", help='Output name for the model')
+    parser.add_argument('--summary_path', type=str, default="/home/dico/Documents/logs/", help='Output path for summaries')#default="./summaries/"
+    parser.add_argument('--model_path', type=str, default="/home/dico/Documents/models/", help='Output path for the model')
+    parser.add_argument('--model_name', type=str, default="3030", help='Output name for the model')
 
     config = parser.parse_args()
 

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteMappingsManager">
+    <list>
+      <list>
+        <remote-mappings server-id="python@sftp://dvanleeuwen@DTA160004.science.uva.nl:22/home/tomrunia/dev/virtualenv/tensorflow/bin/python" />
+      </list>
+    </list>
+  </component>
+</project>

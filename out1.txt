@@ -1,0 +1,1130 @@
+training...
+(115200, 30, 30, 1)
+(12800, 30, 30, 1)
+z_dim: 50  
+('x_minibatch', TensorShape([Dimension(None), Dimension(30), Dimension(30), Dimension(1)]))
+[2018-06-06 13:26] Train Step 0000, Epoch 0.0, Batch Size = 256, Examples/Sec = 188.14, Train LB = -1504.872, Loss = 0.000
+[2018-06-06 13:26] Train Step 0025, Epoch 0.1, Batch Size = 256, Examples/Sec = 3895.20, Train LB = -491.796, Loss = 667.605
+[2018-06-06 13:26] Train Step 0050, Epoch 0.1, Batch Size = 256, Examples/Sec = 3847.94, Train LB = -449.551, Loss = 555.054
+[2018-06-06 13:26] Train Step 0075, Epoch 0.2, Batch Size = 256, Examples/Sec = 3894.19, Train LB = -430.251, Loss = 507.868
+[2018-06-06 13:26] Train Step 0100, Epoch 0.2, Batch Size = 256, Examples/Sec = 3844.07, Train LB = -427.913, Loss = 480.612
+[2018-06-06 13:26] Train Step 0125, Epoch 0.3, Batch Size = 256, Examples/Sec = 3776.37, Train LB = -409.489, Loss = 462.259
+[2018-06-06 13:26] Train Step 0150, Epoch 0.3, Batch Size = 256, Examples/Sec = 3898.35, Train LB = -418.318, Loss = 449.677
+[2018-06-06 13:26] Train Step 0175, Epoch 0.4, Batch Size = 256, Examples/Sec = 3883.14, Train LB = -412.200, Loss = 441.461
+[2018-06-06 13:26] Train Step 0200, Epoch 0.4, Batch Size = 256, Examples/Sec = 3893.23, Train LB = -417.130, Loss = 435.913
+Performance on test set:
+  Test Lower Bound = -418.680, Test Loss = 418.680
+[2018-06-06 13:26] Train Step 0225, Epoch 0.5, Batch Size = 256, Examples/Sec = 3641.69, Train LB = -411.656, Loss = 431.221
+[2018-06-06 13:26] Train Step 0250, Epoch 0.6, Batch Size = 256, Examples/Sec = 3694.57, Train LB = -405.991, Loss = 428.091
+[2018-06-06 13:26] Train Step 0275, Epoch 0.6, Batch Size = 256, Examples/Sec = 3494.64, Train LB = -409.979, Loss = 425.370
+[2018-06-06 13:26] Train Step 0300, Epoch 0.7, Batch Size = 256, Examples/Sec = 3874.10, Train LB = -418.645, Loss = 422.872
+[2018-06-06 13:26] Train Step 0325, Epoch 0.7, Batch Size = 256, Examples/Sec = 3875.74, Train LB = -415.394, Loss = 421.061
+[2018-06-06 13:26] Train Step 0350, Epoch 0.8, Batch Size = 256, Examples/Sec = 3894.60, Train LB = -414.817, Loss = 419.851
+[2018-06-06 13:26] Train Step 0375, Epoch 0.8, Batch Size = 256, Examples/Sec = 3876.38, Train LB = -416.152, Loss = 418.555
+[2018-06-06 13:26] Train Step 0400, Epoch 0.9, Batch Size = 256, Examples/Sec = 3795.12, Train LB = -413.171, Loss = 417.265
+Performance on test set:
+  Test Lower Bound = -412.036, Test Loss = 412.036
+[2018-06-06 13:26] Train Step 0425, Epoch 0.9, Batch Size = 256, Examples/Sec = 3882.31, Train LB = -399.816, Loss = 416.203
+[2018-06-06 13:26] Train Step 0450, Epoch 1.0, Batch Size = 256, Examples/Sec = 3841.24, Train LB = -422.227, Loss = 414.288
+[2018-06-06 13:27] Train Step 0475, Epoch 1.1, Batch Size = 256, Examples/Sec = 3876.79, Train LB = -410.279, Loss = 412.780
+[2018-06-06 13:27] Train Step 0500, Epoch 1.1, Batch Size = 256, Examples/Sec = 3857.22, Train LB = -409.346, Loss = 411.038
+[2018-06-06 13:27] Train Step 0525, Epoch 1.2, Batch Size = 256, Examples/Sec = 3839.81, Train LB = -409.226, Loss = 409.825
+[2018-06-06 13:27] Train Step 0550, Epoch 1.2, Batch Size = 256, Examples/Sec = 3896.98, Train LB = -405.694, Loss = 408.126
+[2018-06-06 13:27] Train Step 0575, Epoch 1.3, Batch Size = 256, Examples/Sec = 3883.67, Train LB = -407.028, Loss = 406.770
+[2018-06-06 13:27] Train Step 0600, Epoch 1.3, Batch Size = 256, Examples/Sec = 3882.21, Train LB = -399.495, Loss = 406.320
+Performance on test set:
+  Test Lower Bound = -400.307, Test Loss = 400.307
+[2018-06-06 13:27] Train Step 0625, Epoch 1.4, Batch Size = 256, Examples/Sec = 3835.56, Train LB = -402.438, Loss = 404.752
+[2018-06-06 13:27] Train Step 0650, Epoch 1.4, Batch Size = 256, Examples/Sec = 3721.42, Train LB = -402.156, Loss = 403.944
+[2018-06-06 13:27] Train Step 0675, Epoch 1.5, Batch Size = 256, Examples/Sec = 3879.97, Train LB = -385.110, Loss = 402.657
+[2018-06-06 13:27] Train Step 0700, Epoch 1.6, Batch Size = 256, Examples/Sec = 3861.48, Train LB = -396.236, Loss = 401.486
+[2018-06-06 13:27] Train Step 0725, Epoch 1.6, Batch Size = 256, Examples/Sec = 3852.64, Train LB = -393.169, Loss = 400.611
+[2018-06-06 13:27] Train Step 0750, Epoch 1.7, Batch Size = 256, Examples/Sec = 3865.50, Train LB = -395.881, Loss = 399.874
+[2018-06-06 13:27] Train Step 0775, Epoch 1.7, Batch Size = 256, Examples/Sec = 3861.83, Train LB = -394.493, Loss = 399.496
+[2018-06-06 13:27] Train Step 0800, Epoch 1.8, Batch Size = 256, Examples/Sec = 3857.87, Train LB = -397.434, Loss = 399.349
+Performance on test set:
+  Test Lower Bound = -395.620, Test Loss = 395.620
+[2018-06-06 13:27] Train Step 0825, Epoch 1.8, Batch Size = 256, Examples/Sec = 3883.08, Train LB = -391.753, Loss = 398.245
+[2018-06-06 13:27] Train Step 0850, Epoch 1.9, Batch Size = 256, Examples/Sec = 3852.00, Train LB = -396.573, Loss = 397.300
+[2018-06-06 13:27] Train Step 0875, Epoch 1.9, Batch Size = 256, Examples/Sec = 3853.15, Train LB = -399.222, Loss = 396.260
+[2018-06-06 13:27] Train Step 0900, Epoch 2.0, Batch Size = 256, Examples/Sec = 3845.81, Train LB = -388.995, Loss = 395.901
+[2018-06-06 13:27] Train Step 0925, Epoch 2.1, Batch Size = 256, Examples/Sec = 3871.99, Train LB = -382.998, Loss = 395.012
+[2018-06-06 13:27] Train Step 0950, Epoch 2.1, Batch Size = 256, Examples/Sec = 3868.13, Train LB = -397.776, Loss = 394.085
+[2018-06-06 13:27] Train Step 0975, Epoch 2.2, Batch Size = 256, Examples/Sec = 3850.44, Train LB = -389.737, Loss = 393.363
+[2018-06-06 13:27] Train Step 1000, Epoch 2.2, Batch Size = 256, Examples/Sec = 3785.53, Train LB = -378.089, Loss = 393.071
+Performance on test set:
+  Test Lower Bound = -391.128, Test Loss = 391.128
+[2018-06-06 13:27] Train Step 1025, Epoch 2.3, Batch Size = 256, Examples/Sec = 3791.92, Train LB = -396.708, Loss = 392.441
+[2018-06-06 13:27] Train Step 1050, Epoch 2.3, Batch Size = 256, Examples/Sec = 3877.32, Train LB = -400.421, Loss = 391.932
+[2018-06-06 13:27] Train Step 1075, Epoch 2.4, Batch Size = 256, Examples/Sec = 3874.86, Train LB = -381.218, Loss = 391.747
+[2018-06-06 13:27] Train Step 1100, Epoch 2.4, Batch Size = 256, Examples/Sec = 3791.64, Train LB = -381.048, Loss = 390.885
+[2018-06-06 13:27] Train Step 1125, Epoch 2.5, Batch Size = 256, Examples/Sec = 3868.11, Train LB = -386.715, Loss = 390.333
+[2018-06-06 13:27] Train Step 1150, Epoch 2.6, Batch Size = 256, Examples/Sec = 3846.57, Train LB = -385.917, Loss = 390.143
+[2018-06-06 13:27] Train Step 1175, Epoch 2.6, Batch Size = 256, Examples/Sec = 3867.12, Train LB = -384.620, Loss = 390.046
+[2018-06-06 13:27] Train Step 1200, Epoch 2.7, Batch Size = 256, Examples/Sec = 3855.71, Train LB = -396.150, Loss = 390.230
+Performance on test set:
+  Test Lower Bound = -388.346, Test Loss = 388.346
+[2018-06-06 13:27] Train Step 1225, Epoch 2.7, Batch Size = 256, Examples/Sec = 3864.38, Train LB = -403.012, Loss = 389.840
+[2018-06-06 13:27] Train Step 1250, Epoch 2.8, Batch Size = 256, Examples/Sec = 3832.00, Train LB = -382.327, Loss = 389.301
+[2018-06-06 13:27] Train Step 1275, Epoch 2.8, Batch Size = 256, Examples/Sec = 3865.19, Train LB = -399.926, Loss = 388.476
+[2018-06-06 13:28] Train Step 1300, Epoch 2.9, Batch Size = 256, Examples/Sec = 3852.22, Train LB = -386.305, Loss = 388.072
+[2018-06-06 13:28] Train Step 1325, Epoch 2.9, Batch Size = 256, Examples/Sec = 3842.92, Train LB = -388.850, Loss = 388.107
+[2018-06-06 13:28] Train Step 1350, Epoch 3.0, Batch Size = 256, Examples/Sec = 3848.76, Train LB = -386.656, Loss = 387.411
+[2018-06-06 13:28] Train Step 1375, Epoch 3.1, Batch Size = 256, Examples/Sec = 3844.58, Train LB = -392.843, Loss = 387.517
+[2018-06-06 13:28] Train Step 1400, Epoch 3.1, Batch Size = 256, Examples/Sec = 3853.92, Train LB = -392.347, Loss = 387.200
+Performance on test set:
+  Test Lower Bound = -385.241, Test Loss = 385.241
+[2018-06-06 13:28] Train Step 1425, Epoch 3.2, Batch Size = 256, Examples/Sec = 3858.69, Train LB = -393.912, Loss = 386.878
+[2018-06-06 13:28] Train Step 1450, Epoch 3.2, Batch Size = 256, Examples/Sec = 3845.46, Train LB = -382.987, Loss = 387.460
+[2018-06-06 13:28] Train Step 1475, Epoch 3.3, Batch Size = 256, Examples/Sec = 3843.38, Train LB = -376.218, Loss = 387.307
+[2018-06-06 13:28] Train Step 1500, Epoch 3.3, Batch Size = 256, Examples/Sec = 3859.33, Train LB = -385.283, Loss = 386.522
+[2018-06-06 13:28] Train Step 1525, Epoch 3.4, Batch Size = 256, Examples/Sec = 3798.84, Train LB = -397.426, Loss = 386.595
+[2018-06-06 13:28] Train Step 1550, Epoch 3.4, Batch Size = 256, Examples/Sec = 3856.87, Train LB = -382.913, Loss = 386.416
+[2018-06-06 13:28] Train Step 1575, Epoch 3.5, Batch Size = 256, Examples/Sec = 3862.17, Train LB = -383.835, Loss = 386.482
+[2018-06-06 13:28] Train Step 1600, Epoch 3.6, Batch Size = 256, Examples/Sec = 3866.50, Train LB = -402.224, Loss = 386.285
+Performance on test set:
+  Test Lower Bound = -383.960, Test Loss = 383.960
+[2018-06-06 13:28] Train Step 1625, Epoch 3.6, Batch Size = 256, Examples/Sec = 3817.69, Train LB = -375.898, Loss = 386.480
+[2018-06-06 13:28] Train Step 1650, Epoch 3.7, Batch Size = 256, Examples/Sec = 3831.64, Train LB = -368.649, Loss = 386.023
+[2018-06-06 13:28] Train Step 1675, Epoch 3.7, Batch Size = 256, Examples/Sec = 3870.87, Train LB = -383.873, Loss = 385.524
+[2018-06-06 13:28] Train Step 1700, Epoch 3.8, Batch Size = 256, Examples/Sec = 3855.71, Train LB = -379.908, Loss = 385.327
+[2018-06-06 13:28] Train Step 1725, Epoch 3.8, Batch Size = 256, Examples/Sec = 3864.09, Train LB = -384.792, Loss = 385.427
+[2018-06-06 13:28] Train Step 1750, Epoch 3.9, Batch Size = 256, Examples/Sec = 3862.17, Train LB = -390.847, Loss = 384.710
+[2018-06-06 13:28] Train Step 1775, Epoch 3.9, Batch Size = 256, Examples/Sec = 3837.15, Train LB = -387.094, Loss = 385.168
+[2018-06-06 13:28] Train Step 1800, Epoch 4.0, Batch Size = 256, Examples/Sec = 3854.55, Train LB = -385.618, Loss = 385.563
+Performance on test set:
+  Test Lower Bound = -383.601, Test Loss = 383.601
+[2018-06-06 13:28] Train Step 1825, Epoch 4.1, Batch Size = 256, Examples/Sec = 3759.72, Train LB = -386.787, Loss = 385.014
+[2018-06-06 13:28] Train Step 1850, Epoch 4.1, Batch Size = 256, Examples/Sec = 3861.87, Train LB = -387.727, Loss = 385.068
+[2018-06-06 13:28] Train Step 1875, Epoch 4.2, Batch Size = 256, Examples/Sec = 3849.21, Train LB = -386.395, Loss = 384.735
+[2018-06-06 13:28] Train Step 1900, Epoch 4.2, Batch Size = 256, Examples/Sec = 3854.38, Train LB = -382.431, Loss = 384.491
+[2018-06-06 13:28] Train Step 1925, Epoch 4.3, Batch Size = 256, Examples/Sec = 3859.49, Train LB = -380.062, Loss = 384.071
+[2018-06-06 13:28] Train Step 1950, Epoch 4.3, Batch Size = 256, Examples/Sec = 3857.34, Train LB = -383.071, Loss = 383.702
+[2018-06-06 13:28] Train Step 1975, Epoch 4.4, Batch Size = 256, Examples/Sec = 3845.05, Train LB = -399.564, Loss = 384.469
+[2018-06-06 13:28] Train Step 2000, Epoch 4.4, Batch Size = 256, Examples/Sec = 3869.35, Train LB = -389.492, Loss = 385.044
+Performance on test set:
+  Test Lower Bound = -383.280, Test Loss = 383.280
+[2018-06-06 13:28] Train Step 2025, Epoch 4.5, Batch Size = 256, Examples/Sec = 3811.18, Train LB = -400.823, Loss = 384.509
+[2018-06-06 13:28] Train Step 2050, Epoch 4.6, Batch Size = 256, Examples/Sec = 3854.96, Train LB = -387.736, Loss = 385.024
+[2018-06-06 13:28] Train Step 2075, Epoch 4.6, Batch Size = 256, Examples/Sec = 3830.05, Train LB = -390.040, Loss = 384.673
+[2018-06-06 13:29] Train Step 2100, Epoch 4.7, Batch Size = 256, Examples/Sec = 3824.71, Train LB = -382.107, Loss = 384.041
+[2018-06-06 13:29] Train Step 2125, Epoch 4.7, Batch Size = 256, Examples/Sec = 3863.74, Train LB = -386.854, Loss = 383.521
+[2018-06-06 13:29] Train Step 2150, Epoch 4.8, Batch Size = 256, Examples/Sec = 3886.33, Train LB = -395.370, Loss = 383.531
+[2018-06-06 13:29] Train Step 2175, Epoch 4.8, Batch Size = 256, Examples/Sec = 3852.87, Train LB = -378.933, Loss = 383.912
+[2018-06-06 13:29] Train Step 2200, Epoch 4.9, Batch Size = 256, Examples/Sec = 3845.05, Train LB = -397.354, Loss = 383.806
+Performance on test set:
+  Test Lower Bound = -384.241, Test Loss = 384.241
+[2018-06-06 13:29] Train Step 2225, Epoch 4.9, Batch Size = 256, Examples/Sec = 3851.82, Train LB = -387.236, Loss = 383.455
+[2018-06-06 13:29] Train Step 2250, Epoch 5.0, Batch Size = 256, Examples/Sec = 3843.89, Train LB = -386.885, Loss = 383.805
+[2018-06-06 13:29] Train Step 2275, Epoch 5.1, Batch Size = 256, Examples/Sec = 3859.08, Train LB = -388.097, Loss = 383.609
+[2018-06-06 13:29] Train Step 2300, Epoch 5.1, Batch Size = 256, Examples/Sec = 3848.18, Train LB = -390.300, Loss = 383.093
+[2018-06-06 13:29] Train Step 2325, Epoch 5.2, Batch Size = 256, Examples/Sec = 3857.11, Train LB = -386.622, Loss = 382.701
+[2018-06-06 13:29] Train Step 2350, Epoch 5.2, Batch Size = 256, Examples/Sec = 3839.00, Train LB = -380.675, Loss = 383.280
+[2018-06-06 13:29] Train Step 2375, Epoch 5.3, Batch Size = 256, Examples/Sec = 3851.08, Train LB = -392.626, Loss = 383.500
+[2018-06-06 13:29] Train Step 2400, Epoch 5.3, Batch Size = 256, Examples/Sec = 3856.11, Train LB = -377.291, Loss = 383.972
+Performance on test set:
+  Test Lower Bound = -382.379, Test Loss = 382.379
+[2018-06-06 13:29] Train Step 2425, Epoch 5.4, Batch Size = 256, Examples/Sec = 3838.93, Train LB = -369.227, Loss = 384.055
+[2018-06-06 13:29] Train Step 2450, Epoch 5.4, Batch Size = 256, Examples/Sec = 3847.19, Train LB = -376.863, Loss = 383.168
+[2018-06-06 13:29] Train Step 2475, Epoch 5.5, Batch Size = 256, Examples/Sec = 3864.33, Train LB = -383.726, Loss = 383.242
+[2018-06-06 13:29] Train Step 2500, Epoch 5.6, Batch Size = 256, Examples/Sec = 3850.32, Train LB = -384.916, Loss = 383.594
+[2018-06-06 13:29] Train Step 2525, Epoch 5.6, Batch Size = 256, Examples/Sec = 3859.78, Train LB = -375.181, Loss = 383.609
+[2018-06-06 13:29] Train Step 2550, Epoch 5.7, Batch Size = 256, Examples/Sec = 3867.76, Train LB = -379.534, Loss = 383.032
+[2018-06-06 13:29] Train Step 2575, Epoch 5.7, Batch Size = 256, Examples/Sec = 3856.82, Train LB = -388.745, Loss = 383.417
+[2018-06-06 13:29] Train Step 2600, Epoch 5.8, Batch Size = 256, Examples/Sec = 3800.52, Train LB = -392.952, Loss = 383.711
+Performance on test set:
+  Test Lower Bound = -383.882, Test Loss = 383.882
+[2018-06-06 13:29] Train Step 2625, Epoch 5.8, Batch Size = 256, Examples/Sec = 3766.26, Train LB = -382.783, Loss = 383.484
+[2018-06-06 13:29] Train Step 2650, Epoch 5.9, Batch Size = 256, Examples/Sec = 3847.65, Train LB = -375.906, Loss = 383.264
+[2018-06-06 13:29] Train Step 2675, Epoch 5.9, Batch Size = 256, Examples/Sec = 3864.80, Train LB = -385.431, Loss = 382.676
+[2018-06-06 13:29] Train Step 2700, Epoch 6.0, Batch Size = 256, Examples/Sec = 3728.14, Train LB = -384.165, Loss = 382.138
+[2018-06-06 13:29] Train Step 2725, Epoch 6.1, Batch Size = 256, Examples/Sec = 3847.31, Train LB = -380.606, Loss = 382.716
+[2018-06-06 13:29] Train Step 2750, Epoch 6.1, Batch Size = 256, Examples/Sec = 3838.08, Train LB = -378.725, Loss = 382.743
+[2018-06-06 13:29] Train Step 2775, Epoch 6.2, Batch Size = 256, Examples/Sec = 3846.28, Train LB = -371.602, Loss = 382.929
+[2018-06-06 13:29] Train Step 2800, Epoch 6.2, Batch Size = 256, Examples/Sec = 3856.65, Train LB = -387.471, Loss = 382.961
+Performance on test set:
+  Test Lower Bound = -382.595, Test Loss = 382.595
+[2018-06-06 13:29] Train Step 2825, Epoch 6.3, Batch Size = 256, Examples/Sec = 3877.08, Train LB = -388.193, Loss = 382.716
+[2018-06-06 13:29] Train Step 2850, Epoch 6.3, Batch Size = 256, Examples/Sec = 3849.34, Train LB = -377.618, Loss = 382.713
+[2018-06-06 13:29] Train Step 2875, Epoch 6.4, Batch Size = 256, Examples/Sec = 3805.27, Train LB = -382.395, Loss = 382.067
+[2018-06-06 13:29] Train Step 2900, Epoch 6.4, Batch Size = 256, Examples/Sec = 3845.17, Train LB = -377.140, Loss = 382.327
+[2018-06-06 13:30] Train Step 2925, Epoch 6.5, Batch Size = 256, Examples/Sec = 3851.19, Train LB = -383.167, Loss = 381.852
+[2018-06-06 13:30] Train Step 2950, Epoch 6.6, Batch Size = 256, Examples/Sec = 3829.01, Train LB = -390.939, Loss = 382.418
+[2018-06-06 13:30] Train Step 2975, Epoch 6.6, Batch Size = 256, Examples/Sec = 3836.35, Train LB = -385.582, Loss = 382.308
+[2018-06-06 13:30] Train Step 3000, Epoch 6.7, Batch Size = 256, Examples/Sec = 3864.33, Train LB = -381.980, Loss = 383.190
+Performance on test set:
+  Test Lower Bound = -381.581, Test Loss = 381.581
+[2018-06-06 13:30] Train Step 3025, Epoch 6.7, Batch Size = 256, Examples/Sec = 3842.34, Train LB = -382.503, Loss = 383.143
+[2018-06-06 13:30] Train Step 3050, Epoch 6.8, Batch Size = 256, Examples/Sec = 3855.07, Train LB = -394.491, Loss = 382.939
+[2018-06-06 13:30] Train Step 3075, Epoch 6.8, Batch Size = 256, Examples/Sec = 3849.34, Train LB = -378.141, Loss = 382.240
+[2018-06-06 13:30] Train Step 3100, Epoch 6.9, Batch Size = 256, Examples/Sec = 3875.55, Train LB = -371.393, Loss = 382.067
+[2018-06-06 13:30] Train Step 3125, Epoch 6.9, Batch Size = 256, Examples/Sec = 3869.23, Train LB = -378.825, Loss = 382.301
+[2018-06-06 13:30] Train Step 3150, Epoch 7.0, Batch Size = 256, Examples/Sec = 3838.19, Train LB = -372.679, Loss = 382.428
+[2018-06-06 13:30] Train Step 3175, Epoch 7.1, Batch Size = 256, Examples/Sec = 3859.02, Train LB = -402.768, Loss = 382.257
+[2018-06-06 13:30] Train Step 3200, Epoch 7.1, Batch Size = 256, Examples/Sec = 3855.54, Train LB = -376.177, Loss = 382.905
+Performance on test set:
+  Test Lower Bound = -381.638, Test Loss = 381.638
+[2018-06-06 13:30] Train Step 3225, Epoch 7.2, Batch Size = 256, Examples/Sec = 3867.07, Train LB = -383.101, Loss = 382.548
+[2018-06-06 13:30] Train Step 3250, Epoch 7.2, Batch Size = 256, Examples/Sec = 3853.45, Train LB = -385.487, Loss = 382.303
+[2018-06-06 13:30] Train Step 3275, Epoch 7.3, Batch Size = 256, Examples/Sec = 3866.19, Train LB = -384.521, Loss = 381.657
+[2018-06-06 13:30] Train Step 3300, Epoch 7.3, Batch Size = 256, Examples/Sec = 3854.73, Train LB = -376.539, Loss = 381.548
+[2018-06-06 13:30] Train Step 3325, Epoch 7.4, Batch Size = 256, Examples/Sec = 3858.80, Train LB = -387.534, Loss = 381.781
+[2018-06-06 13:30] Train Step 3350, Epoch 7.4, Batch Size = 256, Examples/Sec = 3861.88, Train LB = -386.058, Loss = 381.476
+[2018-06-06 13:30] Train Step 3375, Epoch 7.5, Batch Size = 256, Examples/Sec = 3829.19, Train LB = -395.334, Loss = 381.733
+[2018-06-06 13:30] Train Step 3400, Epoch 7.6, Batch Size = 256, Examples/Sec = 3856.53, Train LB = -382.171, Loss = 381.890
+Performance on test set:
+  Test Lower Bound = -381.299, Test Loss = 381.299
+[2018-06-06 13:30] Train Step 3425, Epoch 7.6, Batch Size = 256, Examples/Sec = 3785.58, Train LB = -380.606, Loss = 381.941
+[2018-06-06 13:30] Train Step 3450, Epoch 7.7, Batch Size = 256, Examples/Sec = 3847.02, Train LB = -381.837, Loss = 381.648
+[2018-06-06 13:30] Train Step 3475, Epoch 7.7, Batch Size = 256, Examples/Sec = 3846.10, Train LB = -382.668, Loss = 381.704
+[2018-06-06 13:30] Train Step 3500, Epoch 7.8, Batch Size = 256, Examples/Sec = 3786.03, Train LB = -370.890, Loss = 381.574
+[2018-06-06 13:30] Train Step 3525, Epoch 7.8, Batch Size = 256, Examples/Sec = 3862.52, Train LB = -386.553, Loss = 381.540
+[2018-06-06 13:30] Train Step 3550, Epoch 7.9, Batch Size = 256, Examples/Sec = 3848.18, Train LB = -382.315, Loss = 381.696
+[2018-06-06 13:30] Train Step 3575, Epoch 7.9, Batch Size = 256, Examples/Sec = 3758.85, Train LB = -375.518, Loss = 381.576
+[2018-06-06 13:30] Train Step 3600, Epoch 8.0, Batch Size = 256, Examples/Sec = 3867.47, Train LB = -381.839, Loss = 381.794
+Performance on test set:
+  Test Lower Bound = -379.930, Test Loss = 379.930
+[2018-06-06 13:30] Train Step 3625, Epoch 8.1, Batch Size = 256, Examples/Sec = 3842.99, Train LB = -383.143, Loss = 381.709
+[2018-06-06 13:30] Train Step 3650, Epoch 8.1, Batch Size = 256, Examples/Sec = 3874.80, Train LB = -386.676, Loss = 381.369
+[2018-06-06 13:30] Train Step 3675, Epoch 8.2, Batch Size = 256, Examples/Sec = 3867.83, Train LB = -376.874, Loss = 381.455
+[2018-06-06 13:30] Train Step 3700, Epoch 8.2, Batch Size = 256, Examples/Sec = 3862.98, Train LB = -373.631, Loss = 380.674
+[2018-06-06 13:31] Train Step 3725, Epoch 8.3, Batch Size = 256, Examples/Sec = 3843.62, Train LB = -381.860, Loss = 380.342
+[2018-06-06 13:31] Train Step 3750, Epoch 8.3, Batch Size = 256, Examples/Sec = 3843.55, Train LB = -374.777, Loss = 380.534
+[2018-06-06 13:31] Train Step 3775, Epoch 8.4, Batch Size = 256, Examples/Sec = 3866.83, Train LB = -387.462, Loss = 380.434
+[2018-06-06 13:31] Train Step 3800, Epoch 8.4, Batch Size = 256, Examples/Sec = 3848.25, Train LB = -379.167, Loss = 381.269
+Performance on test set:
+  Test Lower Bound = -380.086, Test Loss = 380.086
+[2018-06-06 13:31] Train Step 3825, Epoch 8.5, Batch Size = 256, Examples/Sec = 3860.88, Train LB = -374.126, Loss = 380.477
+[2018-06-06 13:31] Train Step 3850, Epoch 8.6, Batch Size = 256, Examples/Sec = 3803.36, Train LB = -386.070, Loss = 380.969
+[2018-06-06 13:31] Train Step 3875, Epoch 8.6, Batch Size = 256, Examples/Sec = 3849.68, Train LB = -371.368, Loss = 380.747
+[2018-06-06 13:31] Train Step 3900, Epoch 8.7, Batch Size = 256, Examples/Sec = 3834.81, Train LB = -378.583, Loss = 381.056
+[2018-06-06 13:31] Train Step 3925, Epoch 8.7, Batch Size = 256, Examples/Sec = 3860.42, Train LB = -390.579, Loss = 380.809
+[2018-06-06 13:31] Train Step 3950, Epoch 8.8, Batch Size = 256, Examples/Sec = 3790.23, Train LB = -381.042, Loss = 380.608
+[2018-06-06 13:31] Train Step 3975, Epoch 8.8, Batch Size = 256, Examples/Sec = 3838.88, Train LB = -392.598, Loss = 381.145
+[2018-06-06 13:31] Train Step 4000, Epoch 8.9, Batch Size = 256, Examples/Sec = 3830.10, Train LB = -364.274, Loss = 381.131
+Performance on test set:
+  Test Lower Bound = -380.957, Test Loss = 380.957
+[2018-06-06 13:31] Train Step 4025, Epoch 8.9, Batch Size = 256, Examples/Sec = 3844.71, Train LB = -371.955, Loss = 380.990
+[2018-06-06 13:31] Train Step 4050, Epoch 9.0, Batch Size = 256, Examples/Sec = 3765.98, Train LB = -380.200, Loss = 381.260
+[2018-06-06 13:31] Train Step 4075, Epoch 9.1, Batch Size = 256, Examples/Sec = 3851.84, Train LB = -375.368, Loss = 380.632
+[2018-06-06 13:31] Train Step 4100, Epoch 9.1, Batch Size = 256, Examples/Sec = 3860.77, Train LB = -385.547, Loss = 380.427
+[2018-06-06 13:31] Train Step 4125, Epoch 9.2, Batch Size = 256, Examples/Sec = 3729.98, Train LB = -375.547, Loss = 380.588
+[2018-06-06 13:31] Train Step 4150, Epoch 9.2, Batch Size = 256, Examples/Sec = 3858.22, Train LB = -391.380, Loss = 380.093
+[2018-06-06 13:31] Train Step 4175, Epoch 9.3, Batch Size = 256, Examples/Sec = 3860.42, Train LB = -379.626, Loss = 380.479
+[2018-06-06 13:31] Train Step 4200, Epoch 9.3, Batch Size = 256, Examples/Sec = 3774.31, Train LB = -382.001, Loss = 381.223
+Performance on test set:
+  Test Lower Bound = -380.275, Test Loss = 380.275
+[2018-06-06 13:31] Train Step 4225, Epoch 9.4, Batch Size = 256, Examples/Sec = 3848.47, Train LB = -371.100, Loss = 380.765
+[2018-06-06 13:31] Train Step 4250, Epoch 9.4, Batch Size = 256, Examples/Sec = 3847.43, Train LB = -385.244, Loss = 380.703
+[2018-06-06 13:31] Train Step 4275, Epoch 9.5, Batch Size = 256, Examples/Sec = 3851.88, Train LB = -380.960, Loss = 380.614
+[2018-06-06 13:31] Train Step 4300, Epoch 9.6, Batch Size = 256, Examples/Sec = 3802.28, Train LB = -384.114, Loss = 380.673
+[2018-06-06 13:31] Train Step 4325, Epoch 9.6, Batch Size = 256, Examples/Sec = 3848.63, Train LB = -383.125, Loss = 380.136
+[2018-06-06 13:31] Train Step 4350, Epoch 9.7, Batch Size = 256, Examples/Sec = 3846.91, Train LB = -381.051, Loss = 379.670
+[2018-06-06 13:31] Train Step 4375, Epoch 9.7, Batch Size = 256, Examples/Sec = 3862.35, Train LB = -386.254, Loss = 379.815
+[2018-06-06 13:31] Train Step 4400, Epoch 9.8, Batch Size = 256, Examples/Sec = 3843.03, Train LB = -379.441, Loss = 380.745
+Performance on test set:
+  Test Lower Bound = -380.228, Test Loss = 380.228
+[2018-06-06 13:31] Train Step 4425, Epoch 9.8, Batch Size = 256, Examples/Sec = 3841.83, Train LB = -387.700, Loss = 380.720
+[2018-06-06 13:31] Train Step 4450, Epoch 9.9, Batch Size = 256, Examples/Sec = 3848.23, Train LB = -363.450, Loss = 380.862
+[2018-06-06 13:31] Train Step 4475, Epoch 9.9, Batch Size = 256, Examples/Sec = 3797.15, Train LB = -386.283, Loss = 380.074
+[2018-06-06 13:31] Train Step 4500, Epoch 10.0, Batch Size = 256, Examples/Sec = 3841.78, Train LB = -365.404, Loss = 379.218
+[2018-06-06 13:32] Train Step 4525, Epoch 10.1, Batch Size = 256, Examples/Sec = 3845.86, Train LB = -383.502, Loss = 378.865
+[2018-06-06 13:32] Train Step 4550, Epoch 10.1, Batch Size = 256, Examples/Sec = 3865.50, Train LB = -372.946, Loss = 379.265
+[2018-06-06 13:32] Train Step 4575, Epoch 10.2, Batch Size = 256, Examples/Sec = 3863.80, Train LB = -378.847, Loss = 379.370
+[2018-06-06 13:32] Train Step 4600, Epoch 10.2, Batch Size = 256, Examples/Sec = 3850.90, Train LB = -379.807, Loss = 380.132
+Performance on test set:
+  Test Lower Bound = -381.949, Test Loss = 381.949
+[2018-06-06 13:32] Train Step 4625, Epoch 10.3, Batch Size = 256, Examples/Sec = 3862.35, Train LB = -380.645, Loss = 379.878
+[2018-06-06 13:32] Train Step 4650, Epoch 10.3, Batch Size = 256, Examples/Sec = 3813.95, Train LB = -386.275, Loss = 379.775
+[2018-06-06 13:32] Train Step 4675, Epoch 10.4, Batch Size = 256, Examples/Sec = 3755.31, Train LB = -376.850, Loss = 379.350
+[2018-06-06 13:32] Train Step 4700, Epoch 10.4, Batch Size = 256, Examples/Sec = 3867.01, Train LB = -393.900, Loss = 379.435
+[2018-06-06 13:32] Train Step 4725, Epoch 10.5, Batch Size = 256, Examples/Sec = 3854.03, Train LB = -370.481, Loss = 379.272
+[2018-06-06 13:32] Train Step 4750, Epoch 10.6, Batch Size = 256, Examples/Sec = 3774.31, Train LB = -366.598, Loss = 379.270
+[2018-06-06 13:32] Train Step 4775, Epoch 10.6, Batch Size = 256, Examples/Sec = 3848.87, Train LB = -379.027, Loss = 380.078
+[2018-06-06 13:32] Train Step 4800, Epoch 10.7, Batch Size = 256, Examples/Sec = 3850.68, Train LB = -377.310, Loss = 380.081
+Performance on test set:
+  Test Lower Bound = -380.023, Test Loss = 380.023
+[2018-06-06 13:32] Train Step 4825, Epoch 10.7, Batch Size = 256, Examples/Sec = 3793.38, Train LB = -377.898, Loss = 379.792
+[2018-06-06 13:32] Train Step 4850, Epoch 10.8, Batch Size = 256, Examples/Sec = 3847.42, Train LB = -377.178, Loss = 379.378
+[2018-06-06 13:32] Train Step 4875, Epoch 10.8, Batch Size = 256, Examples/Sec = 3542.77, Train LB = -380.743, Loss = 378.967
+[2018-06-06 13:32] Train Step 4900, Epoch 10.9, Batch Size = 256, Examples/Sec = 3579.07, Train LB = -378.471, Loss = 378.653
+[2018-06-06 13:32] Train Step 4925, Epoch 10.9, Batch Size = 256, Examples/Sec = 3583.58, Train LB = -371.798, Loss = 378.197
+[2018-06-06 13:32] Train Step 4950, Epoch 11.0, Batch Size = 256, Examples/Sec = 3568.99, Train LB = -394.817, Loss = 378.304
+[2018-06-06 13:32] Train Step 4975, Epoch 11.1, Batch Size = 256, Examples/Sec = 3554.38, Train LB = -380.100, Loss = 378.907
+[2018-06-06 13:32] Train Step 5000, Epoch 11.1, Batch Size = 256, Examples/Sec = 3552.94, Train LB = -378.835, Loss = 379.651
+Performance on test set:
+  Test Lower Bound = -379.132, Test Loss = 379.132
+[2018-06-06 13:32] Train Step 5025, Epoch 11.2, Batch Size = 256, Examples/Sec = 3855.53, Train LB = -380.532, Loss = 379.771
+[2018-06-06 13:32] Train Step 5050, Epoch 11.2, Batch Size = 256, Examples/Sec = 3843.80, Train LB = -378.016, Loss = 379.724
+[2018-06-06 13:32] Train Step 5075, Epoch 11.3, Batch Size = 256, Examples/Sec = 3854.03, Train LB = -382.671, Loss = 379.210
+[2018-06-06 13:32] Train Step 5100, Epoch 11.3, Batch Size = 256, Examples/Sec = 3857.18, Train LB = -380.507, Loss = 378.320
+[2018-06-06 13:32] Train Step 5125, Epoch 11.4, Batch Size = 256, Examples/Sec = 3852.93, Train LB = -381.061, Loss = 378.095
+[2018-06-06 13:32] Train Step 5150, Epoch 11.4, Batch Size = 256, Examples/Sec = 3825.17, Train LB = -378.226, Loss = 377.855
+[2018-06-06 13:32] Train Step 5175, Epoch 11.5, Batch Size = 256, Examples/Sec = 3859.09, Train LB = -377.714, Loss = 378.579
+[2018-06-06 13:32] Train Step 5200, Epoch 11.6, Batch Size = 256, Examples/Sec = 3799.12, Train LB = -407.241, Loss = 378.966
+Performance on test set:
+  Test Lower Bound = -378.410, Test Loss = 378.410
+[2018-06-06 13:32] Train Step 5225, Epoch 11.6, Batch Size = 256, Examples/Sec = 3849.68, Train LB = -390.632, Loss = 378.835
+[2018-06-06 13:32] Train Step 5250, Epoch 11.7, Batch Size = 256, Examples/Sec = 3850.90, Train LB = -376.464, Loss = 378.855
+[2018-06-06 13:32] Train Step 5275, Epoch 11.7, Batch Size = 256, Examples/Sec = 3847.94, Train LB = -371.639, Loss = 378.588
+[2018-06-06 13:32] Train Step 5300, Epoch 11.8, Batch Size = 256, Examples/Sec = 3851.82, Train LB = -387.372, Loss = 378.113
+[2018-06-06 13:33] Train Step 5325, Epoch 11.8, Batch Size = 256, Examples/Sec = 3856.35, Train LB = -388.964, Loss = 377.722
+[2018-06-06 13:33] Train Step 5350, Epoch 11.9, Batch Size = 256, Examples/Sec = 3841.49, Train LB = -363.762, Loss = 377.858
+[2018-06-06 13:33] Train Step 5375, Epoch 11.9, Batch Size = 256, Examples/Sec = 3789.51, Train LB = -376.578, Loss = 378.028
+[2018-06-06 13:33] Train Step 5400, Epoch 12.0, Batch Size = 256, Examples/Sec = 3853.00, Train LB = -392.543, Loss = 378.845
+Performance on test set:
+  Test Lower Bound = -377.367, Test Loss = 377.368
+[2018-06-06 13:33] Train Step 5425, Epoch 12.1, Batch Size = 256, Examples/Sec = 3843.84, Train LB = -368.594, Loss = 378.862
+[2018-06-06 13:33] Train Step 5450, Epoch 12.1, Batch Size = 256, Examples/Sec = 3840.86, Train LB = -365.996, Loss = 378.378
+[2018-06-06 13:33] Train Step 5475, Epoch 12.2, Batch Size = 256, Examples/Sec = 3785.13, Train LB = -383.848, Loss = 378.030
+[2018-06-06 13:33] Train Step 5500, Epoch 12.2, Batch Size = 256, Examples/Sec = 3846.26, Train LB = -376.540, Loss = 377.745
+[2018-06-06 13:33] Train Step 5525, Epoch 12.3, Batch Size = 256, Examples/Sec = 3841.36, Train LB = -381.875, Loss = 377.627
+[2018-06-06 13:33] Train Step 5550, Epoch 12.3, Batch Size = 256, Examples/Sec = 3844.31, Train LB = -370.213, Loss = 377.515
+[2018-06-06 13:33] Train Step 5575, Epoch 12.4, Batch Size = 256, Examples/Sec = 3838.48, Train LB = -378.342, Loss = 377.440
+[2018-06-06 13:33] Train Step 5600, Epoch 12.4, Batch Size = 256, Examples/Sec = 3856.69, Train LB = -379.813, Loss = 378.260
+Performance on test set:
+  Test Lower Bound = -377.038, Test Loss = 377.038
+[2018-06-06 13:33] Train Step 5625, Epoch 12.5, Batch Size = 256, Examples/Sec = 3834.75, Train LB = -377.087, Loss = 377.762
+[2018-06-06 13:33] Train Step 5650, Epoch 12.6, Batch Size = 256, Examples/Sec = 3807.60, Train LB = -376.096, Loss = 377.401
+[2018-06-06 13:33] Train Step 5675, Epoch 12.6, Batch Size = 256, Examples/Sec = 3853.91, Train LB = -370.293, Loss = 377.114
+[2018-06-06 13:33] Train Step 5700, Epoch 12.7, Batch Size = 256, Examples/Sec = 3859.31, Train LB = -380.914, Loss = 377.088
+[2018-06-06 13:33] Train Step 5725, Epoch 12.7, Batch Size = 256, Examples/Sec = 3820.83, Train LB = -378.928, Loss = 376.490
+[2018-06-06 13:33] Train Step 5750, Epoch 12.8, Batch Size = 256, Examples/Sec = 3849.56, Train LB = -380.704, Loss = 376.512
+[2018-06-06 13:33] Train Step 5775, Epoch 12.8, Batch Size = 256, Examples/Sec = 3856.35, Train LB = -387.484, Loss = 376.677
+[2018-06-06 13:33] Train Step 5800, Epoch 12.9, Batch Size = 256, Examples/Sec = 3839.58, Train LB = -383.833, Loss = 377.117
+Performance on test set:
+  Test Lower Bound = -376.475, Test Loss = 376.475
+[2018-06-06 13:33] Train Step 5825, Epoch 12.9, Batch Size = 256, Examples/Sec = 3798.56, Train LB = -378.012, Loss = 376.781
+[2018-06-06 13:33] Train Step 5850, Epoch 13.0, Batch Size = 256, Examples/Sec = 3857.63, Train LB = -377.892, Loss = 376.500
+[2018-06-06 13:33] Train Step 5875, Epoch 13.1, Batch Size = 256, Examples/Sec = 3873.68, Train LB = -374.530, Loss = 376.497
+[2018-06-06 13:33] Train Step 5900, Epoch 13.1, Batch Size = 256, Examples/Sec = 3861.70, Train LB = -375.662, Loss = 376.492
+[2018-06-06 13:33] Train Step 5925, Epoch 13.2, Batch Size = 256, Examples/Sec = 3848.76, Train LB = -373.386, Loss = 376.679
+[2018-06-06 13:33] Train Step 5950, Epoch 13.2, Batch Size = 256, Examples/Sec = 3843.73, Train LB = -378.317, Loss = 376.060
+[2018-06-06 13:33] Train Step 5975, Epoch 13.3, Batch Size = 256, Examples/Sec = 3855.20, Train LB = -384.799, Loss = 376.019
+[2018-06-06 13:33] Train Step 6000, Epoch 13.3, Batch Size = 256, Examples/Sec = 3841.08, Train LB = -363.096, Loss = 376.812
+Performance on test set:
+  Test Lower Bound = -376.696, Test Loss = 376.696
+[2018-06-06 13:33] Train Step 6025, Epoch 13.4, Batch Size = 256, Examples/Sec = 3861.19, Train LB = -378.700, Loss = 376.476
+[2018-06-06 13:33] Train Step 6050, Epoch 13.4, Batch Size = 256, Examples/Sec = 3865.37, Train LB = -378.069, Loss = 375.884
+[2018-06-06 13:33] Train Step 6075, Epoch 13.5, Batch Size = 256, Examples/Sec = 3863.74, Train LB = -366.588, Loss = 375.799
+[2018-06-06 13:33] Train Step 6100, Epoch 13.6, Batch Size = 256, Examples/Sec = 3864.49, Train LB = -377.171, Loss = 375.764
+[2018-06-06 13:33] Train Step 6125, Epoch 13.6, Batch Size = 256, Examples/Sec = 3832.11, Train LB = -375.578, Loss = 376.149
+[2018-06-06 13:34] Train Step 6150, Epoch 13.7, Batch Size = 256, Examples/Sec = 3852.87, Train LB = -388.303, Loss = 375.652
+[2018-06-06 13:34] Train Step 6175, Epoch 13.7, Batch Size = 256, Examples/Sec = 3859.15, Train LB = -379.288, Loss = 375.519
+[2018-06-06 13:34] Train Step 6200, Epoch 13.8, Batch Size = 256, Examples/Sec = 3840.97, Train LB = -373.235, Loss = 376.377
+Performance on test set:
+  Test Lower Bound = -375.158, Test Loss = 375.158
+[2018-06-06 13:34] Train Step 6225, Epoch 13.8, Batch Size = 256, Examples/Sec = 3833.71, Train LB = -380.804, Loss = 375.909
+[2018-06-06 13:34] Train Step 6250, Epoch 13.9, Batch Size = 256, Examples/Sec = 3835.44, Train LB = -366.565, Loss = 375.930
+[2018-06-06 13:34] Train Step 6275, Epoch 13.9, Batch Size = 256, Examples/Sec = 3853.22, Train LB = -380.425, Loss = 375.792
+[2018-06-06 13:34] Train Step 6300, Epoch 14.0, Batch Size = 256, Examples/Sec = 3859.42, Train LB = -381.874, Loss = 375.218
+[2018-06-06 13:34] Train Step 6325, Epoch 14.1, Batch Size = 256, Examples/Sec = 3834.05, Train LB = -376.740, Loss = 375.334
+[2018-06-06 13:34] Train Step 6350, Epoch 14.1, Batch Size = 256, Examples/Sec = 3750.70, Train LB = -372.259, Loss = 375.089
+[2018-06-06 13:34] Train Step 6375, Epoch 14.2, Batch Size = 256, Examples/Sec = 3850.26, Train LB = -370.729, Loss = 375.938
+[2018-06-06 13:34] Train Step 6400, Epoch 14.2, Batch Size = 256, Examples/Sec = 3856.35, Train LB = -371.103, Loss = 376.370
+Performance on test set:
+  Test Lower Bound = -374.267, Test Loss = 374.267
+[2018-06-06 13:34] Train Step 6425, Epoch 14.3, Batch Size = 256, Examples/Sec = 3845.23, Train LB = -380.265, Loss = 375.811
+[2018-06-06 13:34] Train Step 6450, Epoch 14.3, Batch Size = 256, Examples/Sec = 3858.44, Train LB = -361.688, Loss = 375.734
+[2018-06-06 13:34] Train Step 6475, Epoch 14.4, Batch Size = 256, Examples/Sec = 3824.60, Train LB = -371.334, Loss = 375.833
+[2018-06-06 13:34] Train Step 6500, Epoch 14.4, Batch Size = 256, Examples/Sec = 3841.78, Train LB = -370.980, Loss = 375.320
+[2018-06-06 13:34] Train Step 6525, Epoch 14.5, Batch Size = 256, Examples/Sec = 3881.02, Train LB = -376.457, Loss = 374.743
+[2018-06-06 13:34] Train Step 6550, Epoch 14.6, Batch Size = 256, Examples/Sec = 3841.54, Train LB = -365.149, Loss = 374.853
+[2018-06-06 13:34] Train Step 6575, Epoch 14.6, Batch Size = 256, Examples/Sec = 3863.51, Train LB = -380.465, Loss = 375.061
+[2018-06-06 13:34] Train Step 6600, Epoch 14.7, Batch Size = 256, Examples/Sec = 3859.44, Train LB = -380.212, Loss = 375.813
+Performance on test set:
+  Test Lower Bound = -376.822, Test Loss = 376.822
+[2018-06-06 13:34] Train Step 6625, Epoch 14.7, Batch Size = 256, Examples/Sec = 3829.12, Train LB = -380.446, Loss = 375.458
+[2018-06-06 13:34] Train Step 6650, Epoch 14.8, Batch Size = 256, Examples/Sec = 3857.34, Train LB = -387.848, Loss = 375.581
+[2018-06-06 13:34] Train Step 6675, Epoch 14.8, Batch Size = 256, Examples/Sec = 3851.19, Train LB = -388.356, Loss = 374.999
+[2018-06-06 13:34] Train Step 6700, Epoch 14.9, Batch Size = 256, Examples/Sec = 3864.73, Train LB = -365.498, Loss = 375.337
+[2018-06-06 13:34] Train Step 6725, Epoch 14.9, Batch Size = 256, Examples/Sec = 3850.03, Train LB = -368.806, Loss = 374.909
+[2018-06-06 13:34] Train Step 6750, Epoch 15.0, Batch Size = 256, Examples/Sec = 3857.27, Train LB = -377.227, Loss = 374.188
+[2018-06-06 13:34] Train Step 6775, Epoch 15.1, Batch Size = 256, Examples/Sec = 3832.22, Train LB = -375.853, Loss = 374.352
+[2018-06-06 13:34] Train Step 6800, Epoch 15.1, Batch Size = 256, Examples/Sec = 3815.20, Train LB = -380.644, Loss = 375.135
+Performance on test set:
+  Test Lower Bound = -374.160, Test Loss = 374.160
+[2018-06-06 13:34] Train Step 6825, Epoch 15.2, Batch Size = 256, Examples/Sec = 3839.18, Train LB = -367.153, Loss = 374.987
+[2018-06-06 13:34] Train Step 6850, Epoch 15.2, Batch Size = 256, Examples/Sec = 3866.66, Train LB = -385.184, Loss = 374.742
+[2018-06-06 13:34] Train Step 6875, Epoch 15.3, Batch Size = 256, Examples/Sec = 3869.58, Train LB = -371.745, Loss = 374.717
+[2018-06-06 13:34] Train Step 6900, Epoch 15.3, Batch Size = 256, Examples/Sec = 3850.79, Train LB = -378.554, Loss = 374.231
+[2018-06-06 13:34] Train Step 6925, Epoch 15.4, Batch Size = 256, Examples/Sec = 3859.66, Train LB = -371.252, Loss = 373.566
+[2018-06-06 13:35] Train Step 6950, Epoch 15.4, Batch Size = 256, Examples/Sec = 3839.80, Train LB = -371.131, Loss = 373.633
+[2018-06-06 13:35] Train Step 6975, Epoch 15.5, Batch Size = 256, Examples/Sec = 3841.31, Train LB = -380.962, Loss = 374.039
+[2018-06-06 13:35] Train Step 7000, Epoch 15.6, Batch Size = 256, Examples/Sec = 3847.20, Train LB = -374.215, Loss = 374.835
+Performance on test set:
+  Test Lower Bound = -373.879, Test Loss = 373.879
+[2018-06-06 13:35] Train Step 7025, Epoch 15.6, Batch Size = 256, Examples/Sec = 3845.68, Train LB = -372.278, Loss = 374.546
+[2018-06-06 13:35] Train Step 7050, Epoch 15.7, Batch Size = 256, Examples/Sec = 3839.76, Train LB = -367.418, Loss = 374.574
+[2018-06-06 13:35] Train Step 7075, Epoch 15.7, Batch Size = 256, Examples/Sec = 3853.16, Train LB = -374.523, Loss = 373.582
+[2018-06-06 13:35] Train Step 7100, Epoch 15.8, Batch Size = 256, Examples/Sec = 3854.27, Train LB = -379.023, Loss = 373.585
+[2018-06-06 13:35] Train Step 7125, Epoch 15.8, Batch Size = 256, Examples/Sec = 3840.04, Train LB = -373.304, Loss = 373.348
+[2018-06-06 13:35] Train Step 7150, Epoch 15.9, Batch Size = 256, Examples/Sec = 3753.88, Train LB = -380.095, Loss = 373.360
+[2018-06-06 13:35] Train Step 7175, Epoch 15.9, Batch Size = 256, Examples/Sec = 3848.12, Train LB = -387.265, Loss = 373.668
+[2018-06-06 13:35] Train Step 7200, Epoch 16.0, Batch Size = 256, Examples/Sec = 3843.49, Train LB = -392.001, Loss = 374.175
+Performance on test set:
+  Test Lower Bound = -373.021, Test Loss = 373.021
+[2018-06-06 13:35] Train Step 7225, Epoch 16.1, Batch Size = 256, Examples/Sec = 3871.40, Train LB = -373.937, Loss = 374.365
+[2018-06-06 13:35] Train Step 7250, Epoch 16.1, Batch Size = 256, Examples/Sec = 3852.46, Train LB = -378.081, Loss = 373.356
+[2018-06-06 13:35] Train Step 7275, Epoch 16.2, Batch Size = 256, Examples/Sec = 3841.78, Train LB = -372.217, Loss = 372.865
+[2018-06-06 13:35] Train Step 7300, Epoch 16.2, Batch Size = 256, Examples/Sec = 3868.46, Train LB = -357.327, Loss = 373.162
+[2018-06-06 13:35] Train Step 7325, Epoch 16.3, Batch Size = 256, Examples/Sec = 3772.58, Train LB = -382.165, Loss = 372.305
+[2018-06-06 13:35] Train Step 7350, Epoch 16.3, Batch Size = 256, Examples/Sec = 3835.44, Train LB = -364.868, Loss = 372.134
+[2018-06-06 13:35] Train Step 7375, Epoch 16.4, Batch Size = 256, Examples/Sec = 3847.72, Train LB = -377.200, Loss = 372.961
+[2018-06-06 13:35] Train Step 7400, Epoch 16.4, Batch Size = 256, Examples/Sec = 3866.50, Train LB = -367.790, Loss = 374.113
+Performance on test set:
+  Test Lower Bound = -375.778, Test Loss = 375.778
+[2018-06-06 13:35] Train Step 7425, Epoch 16.5, Batch Size = 256, Examples/Sec = 3864.27, Train LB = -365.392, Loss = 373.573
+[2018-06-06 13:35] Train Step 7450, Epoch 16.6, Batch Size = 256, Examples/Sec = 3855.07, Train LB = -380.904, Loss = 373.385
+[2018-06-06 13:35] Train Step 7475, Epoch 16.6, Batch Size = 256, Examples/Sec = 3854.62, Train LB = -369.029, Loss = 373.137
+[2018-06-06 13:35] Train Step 7500, Epoch 16.7, Batch Size = 256, Examples/Sec = 3790.90, Train LB = -346.797, Loss = 373.544
+[2018-06-06 13:35] Train Step 7525, Epoch 16.7, Batch Size = 256, Examples/Sec = 3844.07, Train LB = -366.892, Loss = 373.147
+[2018-06-06 13:35] Train Step 7550, Epoch 16.8, Batch Size = 256, Examples/Sec = 3845.28, Train LB = -365.887, Loss = 372.844
+[2018-06-06 13:35] Train Step 7575, Epoch 16.8, Batch Size = 256, Examples/Sec = 3838.89, Train LB = -379.445, Loss = 372.950
+[2018-06-06 13:35] Train Step 7600, Epoch 16.9, Batch Size = 256, Examples/Sec = 3745.49, Train LB = -367.860, Loss = 373.571
+Performance on test set:
+  Test Lower Bound = -372.004, Test Loss = 372.004
+[2018-06-06 13:35] Train Step 7625, Epoch 16.9, Batch Size = 256, Examples/Sec = 3839.29, Train LB = -370.285, Loss = 372.930
+[2018-06-06 13:35] Train Step 7650, Epoch 17.0, Batch Size = 256, Examples/Sec = 3853.98, Train LB = -381.632, Loss = 372.058
+[2018-06-06 13:35] Train Step 7675, Epoch 17.1, Batch Size = 256, Examples/Sec = 3779.09, Train LB = -363.000, Loss = 372.316
+[2018-06-06 13:35] Train Step 7700, Epoch 17.1, Batch Size = 256, Examples/Sec = 3845.70, Train LB = -363.276, Loss = 372.003
+[2018-06-06 13:35] Train Step 7725, Epoch 17.2, Batch Size = 256, Examples/Sec = 3833.31, Train LB = -375.043, Loss = 372.233
+[2018-06-06 13:36] Train Step 7750, Epoch 17.2, Batch Size = 256, Examples/Sec = 3868.48, Train LB = -364.467, Loss = 372.576
+[2018-06-06 13:36] Train Step 7775, Epoch 17.3, Batch Size = 256, Examples/Sec = 3852.80, Train LB = -385.303, Loss = 372.333
+[2018-06-06 13:36] Train Step 7800, Epoch 17.3, Batch Size = 256, Examples/Sec = 3854.20, Train LB = -376.248, Loss = 373.331
+Performance on test set:
+  Test Lower Bound = -373.450, Test Loss = 373.450
+[2018-06-06 13:36] Train Step 7825, Epoch 17.4, Batch Size = 256, Examples/Sec = 3856.07, Train LB = -375.939, Loss = 372.864
+[2018-06-06 13:36] Train Step 7850, Epoch 17.4, Batch Size = 256, Examples/Sec = 3778.32, Train LB = -362.578, Loss = 372.807
+[2018-06-06 13:36] Train Step 7875, Epoch 17.5, Batch Size = 256, Examples/Sec = 3836.48, Train LB = -370.184, Loss = 372.498
+[2018-06-06 13:36] Train Step 7900, Epoch 17.6, Batch Size = 256, Examples/Sec = 3853.16, Train LB = -375.251, Loss = 372.279
+[2018-06-06 13:36] Train Step 7925, Epoch 17.6, Batch Size = 256, Examples/Sec = 3867.78, Train LB = -366.169, Loss = 372.228
+[2018-06-06 13:36] Train Step 7950, Epoch 17.7, Batch Size = 256, Examples/Sec = 3825.01, Train LB = -366.187, Loss = 372.361
+[2018-06-06 13:36] Train Step 7975, Epoch 17.7, Batch Size = 256, Examples/Sec = 3841.08, Train LB = -371.321, Loss = 372.712
+[2018-06-06 13:36] Train Step 8000, Epoch 17.8, Batch Size = 256, Examples/Sec = 3744.22, Train LB = -382.884, Loss = 373.160
+Performance on test set:
+  Test Lower Bound = -372.790, Test Loss = 372.790
+[2018-06-06 13:36] Train Step 8025, Epoch 17.8, Batch Size = 256, Examples/Sec = 3780.05, Train LB = -378.080, Loss = 373.115
+[2018-06-06 13:36] Train Step 8050, Epoch 17.9, Batch Size = 256, Examples/Sec = 3840.72, Train LB = -365.328, Loss = 372.878
+[2018-06-06 13:36] Train Step 8075, Epoch 17.9, Batch Size = 256, Examples/Sec = 3863.40, Train LB = -373.824, Loss = 372.397
+[2018-06-06 13:36] Train Step 8100, Epoch 18.0, Batch Size = 256, Examples/Sec = 3861.17, Train LB = -375.661, Loss = 372.473
+[2018-06-06 13:36] Train Step 8125, Epoch 18.1, Batch Size = 256, Examples/Sec = 3845.12, Train LB = -367.149, Loss = 372.585
+[2018-06-06 13:36] Train Step 8150, Epoch 18.1, Batch Size = 256, Examples/Sec = 3835.96, Train LB = -361.597, Loss = 372.101
+[2018-06-06 13:36] Train Step 8175, Epoch 18.2, Batch Size = 256, Examples/Sec = 3840.09, Train LB = -379.531, Loss = 372.177
+[2018-06-06 13:36] Train Step 8200, Epoch 18.2, Batch Size = 256, Examples/Sec = 3864.16, Train LB = -362.332, Loss = 373.146
+Performance on test set:
+  Test Lower Bound = -372.067, Test Loss = 372.067
+[2018-06-06 13:36] Train Step 8225, Epoch 18.3, Batch Size = 256, Examples/Sec = 3858.97, Train LB = -358.162, Loss = 372.274
+[2018-06-06 13:36] Train Step 8250, Epoch 18.3, Batch Size = 256, Examples/Sec = 3858.49, Train LB = -365.022, Loss = 372.012
+[2018-06-06 13:36] Train Step 8275, Epoch 18.4, Batch Size = 256, Examples/Sec = 3855.83, Train LB = -378.012, Loss = 371.309
+[2018-06-06 13:36] Train Step 8300, Epoch 18.4, Batch Size = 256, Examples/Sec = 3854.03, Train LB = -369.378, Loss = 371.272
+[2018-06-06 13:36] Train Step 8325, Epoch 18.5, Batch Size = 256, Examples/Sec = 3846.21, Train LB = -387.422, Loss = 371.236
+[2018-06-06 13:36] Train Step 8350, Epoch 18.6, Batch Size = 256, Examples/Sec = 3839.70, Train LB = -354.853, Loss = 371.307
+[2018-06-06 13:36] Train Step 8375, Epoch 18.6, Batch Size = 256, Examples/Sec = 3863.38, Train LB = -367.252, Loss = 371.407
+[2018-06-06 13:36] Train Step 8400, Epoch 18.7, Batch Size = 256, Examples/Sec = 3837.45, Train LB = -385.589, Loss = 372.343
+Performance on test set:
+  Test Lower Bound = -371.042, Test Loss = 371.042
+[2018-06-06 13:36] Train Step 8425, Epoch 18.7, Batch Size = 256, Examples/Sec = 3858.20, Train LB = -374.005, Loss = 372.104
+[2018-06-06 13:36] Train Step 8450, Epoch 18.8, Batch Size = 256, Examples/Sec = 3856.42, Train LB = -370.429, Loss = 371.498
+[2018-06-06 13:36] Train Step 8475, Epoch 18.8, Batch Size = 256, Examples/Sec = 3857.62, Train LB = -364.846, Loss = 371.449
+[2018-06-06 13:36] Train Step 8500, Epoch 18.9, Batch Size = 256, Examples/Sec = 3854.44, Train LB = -373.940, Loss = 371.122
+[2018-06-06 13:36] Train Step 8525, Epoch 18.9, Batch Size = 256, Examples/Sec = 3848.81, Train LB = -377.337, Loss = 371.263
+[2018-06-06 13:36] Train Step 8550, Epoch 19.0, Batch Size = 256, Examples/Sec = 3846.32, Train LB = -377.090, Loss = 370.860
+[2018-06-06 13:37] Train Step 8575, Epoch 19.1, Batch Size = 256, Examples/Sec = 3870.75, Train LB = -373.422, Loss = 370.855
+[2018-06-06 13:37] Train Step 8600, Epoch 19.1, Batch Size = 256, Examples/Sec = 3833.14, Train LB = -365.521, Loss = 371.529
+Performance on test set:
+  Test Lower Bound = -370.709, Test Loss = 370.709
+[2018-06-06 13:37] Train Step 8625, Epoch 19.2, Batch Size = 256, Examples/Sec = 3852.86, Train LB = -370.368, Loss = 371.225
+[2018-06-06 13:37] Train Step 8650, Epoch 19.2, Batch Size = 256, Examples/Sec = 3854.03, Train LB = -365.447, Loss = 370.807
+[2018-06-06 13:37] Train Step 8675, Epoch 19.3, Batch Size = 256, Examples/Sec = 3845.23, Train LB = -363.464, Loss = 370.540
+[2018-06-06 13:37] Train Step 8700, Epoch 19.3, Batch Size = 256, Examples/Sec = 3754.66, Train LB = -371.810, Loss = 370.974
+[2018-06-06 13:37] Train Step 8725, Epoch 19.4, Batch Size = 256, Examples/Sec = 3866.94, Train LB = -366.524, Loss = 370.366
+[2018-06-06 13:37] Train Step 8750, Epoch 19.4, Batch Size = 256, Examples/Sec = 3858.20, Train LB = -381.198, Loss = 370.619
+[2018-06-06 13:37] Train Step 8775, Epoch 19.5, Batch Size = 256, Examples/Sec = 3758.57, Train LB = -382.717, Loss = 371.181
+[2018-06-06 13:37] Train Step 8800, Epoch 19.6, Batch Size = 256, Examples/Sec = 3830.10, Train LB = -367.879, Loss = 371.177
+Performance on test set:
+  Test Lower Bound = -372.459, Test Loss = 372.459
+[2018-06-06 13:37] Train Step 8825, Epoch 19.6, Batch Size = 256, Examples/Sec = 3844.13, Train LB = -364.831, Loss = 371.427
+[2018-06-06 13:37] Train Step 8850, Epoch 19.7, Batch Size = 256, Examples/Sec = 3834.40, Train LB = -373.986, Loss = 371.506
+[2018-06-06 13:37] Train Step 8875, Epoch 19.7, Batch Size = 256, Examples/Sec = 3830.67, Train LB = -371.479, Loss = 371.011
+[2018-06-06 13:37] Train Step 8900, Epoch 19.8, Batch Size = 256, Examples/Sec = 3873.44, Train LB = -372.662, Loss = 370.668
+[2018-06-06 13:37] Train Step 8925, Epoch 19.8, Batch Size = 256, Examples/Sec = 3847.60, Train LB = -362.125, Loss = 370.633
+[2018-06-06 13:37] Train Step 8950, Epoch 19.9, Batch Size = 256, Examples/Sec = 3850.79, Train LB = -378.083, Loss = 369.379
+[2018-06-06 13:37] Train Step 8975, Epoch 19.9, Batch Size = 256, Examples/Sec = 3851.99, Train LB = -367.051, Loss = 369.946
+[2018-06-06 13:37] Train Step 9000, Epoch 20.0, Batch Size = 256, Examples/Sec = 3849.50, Train LB = -379.483, Loss = 370.337
+Performance on test set:
+  Test Lower Bound = -370.705, Test Loss = 370.705
+[2018-06-06 13:37] Train Step 9025, Epoch 20.1, Batch Size = 256, Examples/Sec = 3840.10, Train LB = -368.664, Loss = 370.319
+[2018-06-06 13:37] Train Step 9050, Epoch 20.1, Batch Size = 256, Examples/Sec = 3846.21, Train LB = -371.911, Loss = 370.276
+[2018-06-06 13:37] Train Step 9075, Epoch 20.2, Batch Size = 256, Examples/Sec = 3837.04, Train LB = -365.288, Loss = 370.018
+[2018-06-06 13:37] Train Step 9100, Epoch 20.2, Batch Size = 256, Examples/Sec = 3848.05, Train LB = -365.673, Loss = 369.873
+[2018-06-06 13:37] Train Step 9125, Epoch 20.3, Batch Size = 256, Examples/Sec = 3845.68, Train LB = -354.726, Loss = 369.976
+[2018-06-06 13:37] Train Step 9150, Epoch 20.3, Batch Size = 256, Examples/Sec = 3846.91, Train LB = -368.741, Loss = 369.489
+[2018-06-06 13:37] Train Step 9175, Epoch 20.4, Batch Size = 256, Examples/Sec = 3876.62, Train LB = -365.384, Loss = 370.530
+[2018-06-06 13:37] Train Step 9200, Epoch 20.4, Batch Size = 256, Examples/Sec = 3845.92, Train LB = -359.433, Loss = 371.520
+Performance on test set:
+  Test Lower Bound = -376.664, Test Loss = 376.664
+[2018-06-06 13:37] Train Step 9225, Epoch 20.5, Batch Size = 256, Examples/Sec = 3846.68, Train LB = -374.967, Loss = 370.927
+[2018-06-06 13:37] Train Step 9250, Epoch 20.6, Batch Size = 256, Examples/Sec = 3836.88, Train LB = -376.880, Loss = 370.545
+[2018-06-06 13:37] Train Step 9275, Epoch 20.6, Batch Size = 256, Examples/Sec = 3838.43, Train LB = -367.401, Loss = 370.050
+[2018-06-06 13:37] Train Step 9300, Epoch 20.7, Batch Size = 256, Examples/Sec = 3836.98, Train LB = -355.917, Loss = 369.922
+[2018-06-06 13:37] Train Step 9325, Epoch 20.7, Batch Size = 256, Examples/Sec = 3836.98, Train LB = -379.901, Loss = 369.204
+[2018-06-06 13:37] Train Step 9350, Epoch 20.8, Batch Size = 256, Examples/Sec = 3851.82, Train LB = -380.154, Loss = 368.893
+[2018-06-06 13:38] Train Step 9375, Epoch 20.8, Batch Size = 256, Examples/Sec = 3835.72, Train LB = -366.323, Loss = 369.287
+[2018-06-06 13:38] Train Step 9400, Epoch 20.9, Batch Size = 256, Examples/Sec = 3846.51, Train LB = -362.663, Loss = 370.343
+Performance on test set:
+  Test Lower Bound = -371.376, Test Loss = 371.376
+[2018-06-06 13:38] Train Step 9425, Epoch 20.9, Batch Size = 256, Examples/Sec = 3864.20, Train LB = -352.858, Loss = 369.919
+[2018-06-06 13:38] Train Step 9450, Epoch 21.0, Batch Size = 256, Examples/Sec = 3846.79, Train LB = -377.951, Loss = 369.475
+[2018-06-06 13:38] Train Step 9475, Epoch 21.1, Batch Size = 256, Examples/Sec = 3852.80, Train LB = -374.779, Loss = 369.856
+[2018-06-06 13:38] Train Step 9500, Epoch 21.1, Batch Size = 256, Examples/Sec = 3839.87, Train LB = -360.094, Loss = 369.401
+[2018-06-06 13:38] Train Step 9525, Epoch 21.2, Batch Size = 256, Examples/Sec = 3872.16, Train LB = -367.107, Loss = 369.487
+[2018-06-06 13:38] Train Step 9550, Epoch 21.2, Batch Size = 256, Examples/Sec = 3841.83, Train LB = -365.997, Loss = 369.429
+[2018-06-06 13:38] Train Step 9575, Epoch 21.3, Batch Size = 256, Examples/Sec = 3842.52, Train LB = -364.948, Loss = 369.533
+[2018-06-06 13:38] Train Step 9600, Epoch 21.3, Batch Size = 256, Examples/Sec = 3844.18, Train LB = -359.146, Loss = 369.659
+Performance on test set:
+  Test Lower Bound = -370.258, Test Loss = 370.258
+[2018-06-06 13:38] Train Step 9625, Epoch 21.4, Batch Size = 256, Examples/Sec = 3848.81, Train LB = -359.659, Loss = 369.049
+[2018-06-06 13:38] Train Step 9650, Epoch 21.4, Batch Size = 256, Examples/Sec = 3857.62, Train LB = -375.178, Loss = 369.171
+[2018-06-06 13:38] Train Step 9675, Epoch 21.5, Batch Size = 256, Examples/Sec = 3858.55, Train LB = -359.793, Loss = 369.442
+[2018-06-06 13:38] Train Step 9700, Epoch 21.6, Batch Size = 256, Examples/Sec = 3822.85, Train LB = -364.446, Loss = 369.149
+[2018-06-06 13:38] Train Step 9725, Epoch 21.6, Batch Size = 256, Examples/Sec = 3862.23, Train LB = -377.820, Loss = 368.835
+[2018-06-06 13:38] Train Step 9750, Epoch 21.7, Batch Size = 256, Examples/Sec = 3838.84, Train LB = -349.704, Loss = 368.482
+[2018-06-06 13:38] Train Step 9775, Epoch 21.7, Batch Size = 256, Examples/Sec = 3856.53, Train LB = -373.401, Loss = 368.685
+[2018-06-06 13:38] Train Step 9800, Epoch 21.8, Batch Size = 256, Examples/Sec = 3843.15, Train LB = -367.349, Loss = 369.705
+Performance on test set:
+  Test Lower Bound = -370.203, Test Loss = 370.203
+[2018-06-06 13:38] Train Step 9825, Epoch 21.8, Batch Size = 256, Examples/Sec = 3856.58, Train LB = -363.611, Loss = 369.910
+[2018-06-06 13:38] Train Step 9850, Epoch 21.9, Batch Size = 256, Examples/Sec = 3848.76, Train LB = -366.255, Loss = 369.620
+[2018-06-06 13:38] Train Step 9875, Epoch 21.9, Batch Size = 256, Examples/Sec = 3851.37, Train LB = -368.999, Loss = 368.882
+[2018-06-06 13:38] Train Step 9900, Epoch 22.0, Batch Size = 256, Examples/Sec = 3850.48, Train LB = -362.476, Loss = 368.658
+[2018-06-06 13:38] Train Step 9925, Epoch 22.1, Batch Size = 256, Examples/Sec = 3870.51, Train LB = -365.169, Loss = 368.026
+[2018-06-06 13:38] Train Step 9950, Epoch 22.1, Batch Size = 256, Examples/Sec = 3853.11, Train LB = -364.421, Loss = 368.058
+[2018-06-06 13:38] Train Step 9975, Epoch 22.2, Batch Size = 256, Examples/Sec = 3840.55, Train LB = -380.410, Loss = 368.406
+[2018-06-06 13:38] Train Step 10000, Epoch 22.2, Batch Size = 256, Examples/Sec = 3815.50, Train LB = -366.436, Loss = 369.405
+Performance on test set:
+  Test Lower Bound = -370.225, Test Loss = 370.225
+[2018-06-06 13:38] Train Step 10025, Epoch 22.3, Batch Size = 256, Examples/Sec = 3866.08, Train LB = -366.528, Loss = 369.023
+[2018-06-06 13:38] Train Step 10050, Epoch 22.3, Batch Size = 256, Examples/Sec = 3843.84, Train LB = -364.209, Loss = 368.854
+[2018-06-06 13:38] Train Step 10075, Epoch 22.4, Batch Size = 256, Examples/Sec = 3855.54, Train LB = -374.157, Loss = 369.144
+[2018-06-06 13:38] Train Step 10100, Epoch 22.4, Batch Size = 256, Examples/Sec = 3870.69, Train LB = -378.740, Loss = 369.122
+[2018-06-06 13:38] Train Step 10125, Epoch 22.5, Batch Size = 256, Examples/Sec = 3828.11, Train LB = -355.631, Loss = 368.839
+[2018-06-06 13:38] Train Step 10150, Epoch 22.6, Batch Size = 256, Examples/Sec = 3824.83, Train LB = -371.032, Loss = 368.827
+[2018-06-06 13:38] Train Step 10175, Epoch 22.6, Batch Size = 256, Examples/Sec = 3840.28, Train LB = -368.016, Loss = 369.368
+[2018-06-06 13:39] Train Step 10200, Epoch 22.7, Batch Size = 256, Examples/Sec = 3776.49, Train LB = -368.607, Loss = 369.456
+Performance on test set:
+  Test Lower Bound = -368.803, Test Loss = 368.803
+[2018-06-06 13:39] Train Step 10225, Epoch 22.7, Batch Size = 256, Examples/Sec = 3881.02, Train LB = -369.094, Loss = 369.202
+[2018-06-06 13:39] Train Step 10250, Epoch 22.8, Batch Size = 256, Examples/Sec = 3851.89, Train LB = -374.469, Loss = 368.686
+[2018-06-06 13:39] Train Step 10275, Epoch 22.8, Batch Size = 256, Examples/Sec = 3861.83, Train LB = -369.280, Loss = 368.897
+[2018-06-06 13:39] Train Step 10300, Epoch 22.9, Batch Size = 256, Examples/Sec = 3854.26, Train LB = -360.742, Loss = 368.430
+[2018-06-06 13:39] Train Step 10325, Epoch 22.9, Batch Size = 256, Examples/Sec = 3853.44, Train LB = -360.788, Loss = 368.048
+[2018-06-06 13:39] Train Step 10350, Epoch 23.0, Batch Size = 256, Examples/Sec = 3871.22, Train LB = -360.536, Loss = 368.375
+[2018-06-06 13:39] Train Step 10375, Epoch 23.1, Batch Size = 256, Examples/Sec = 3791.46, Train LB = -355.963, Loss = 368.656
+[2018-06-06 13:39] Train Step 10400, Epoch 23.1, Batch Size = 256, Examples/Sec = 3848.81, Train LB = -364.883, Loss = 369.229
+Performance on test set:
+  Test Lower Bound = -371.404, Test Loss = 371.404
+[2018-06-06 13:39] Train Step 10425, Epoch 23.2, Batch Size = 256, Examples/Sec = 3878.79, Train LB = -371.458, Loss = 368.771
+[2018-06-06 13:39] Train Step 10450, Epoch 23.2, Batch Size = 256, Examples/Sec = 3853.68, Train LB = -376.834, Loss = 368.283
+[2018-06-06 13:39] Train Step 10475, Epoch 23.3, Batch Size = 256, Examples/Sec = 3798.73, Train LB = -369.200, Loss = 368.808
+[2018-06-06 13:39] Train Step 10500, Epoch 23.3, Batch Size = 256, Examples/Sec = 3848.69, Train LB = -387.831, Loss = 368.187
+[2018-06-06 13:39] Train Step 10525, Epoch 23.4, Batch Size = 256, Examples/Sec = 3853.27, Train LB = -377.577, Loss = 367.838
+[2018-06-06 13:39] Train Step 10550, Epoch 23.4, Batch Size = 256, Examples/Sec = 3842.46, Train LB = -354.527, Loss = 367.911
+[2018-06-06 13:39] Train Step 10575, Epoch 23.5, Batch Size = 256, Examples/Sec = 3837.63, Train LB = -361.898, Loss = 368.117
+[2018-06-06 13:39] Train Step 10600, Epoch 23.6, Batch Size = 256, Examples/Sec = 3877.50, Train LB = -364.333, Loss = 368.486
+Performance on test set:
+  Test Lower Bound = -370.234, Test Loss = 370.234
+[2018-06-06 13:39] Train Step 10625, Epoch 23.6, Batch Size = 256, Examples/Sec = 3748.72, Train LB = -366.431, Loss = 367.932
+[2018-06-06 13:39] Train Step 10650, Epoch 23.7, Batch Size = 256, Examples/Sec = 3762.88, Train LB = -366.237, Loss = 367.927
+[2018-06-06 13:39] Train Step 10675, Epoch 23.7, Batch Size = 256, Examples/Sec = 3876.27, Train LB = -369.371, Loss = 367.053
+[2018-06-06 13:39] Train Step 10700, Epoch 23.8, Batch Size = 256, Examples/Sec = 3856.98, Train LB = -367.909, Loss = 367.238
+[2018-06-06 13:39] Train Step 10725, Epoch 23.8, Batch Size = 256, Examples/Sec = 3834.52, Train LB = -358.820, Loss = 367.451
+[2018-06-06 13:39] Train Step 10750, Epoch 23.9, Batch Size = 256, Examples/Sec = 3848.18, Train LB = -365.804, Loss = 366.919
+[2018-06-06 13:39] Train Step 10775, Epoch 23.9, Batch Size = 256, Examples/Sec = 3872.16, Train LB = -372.308, Loss = 367.465
+[2018-06-06 13:39] Train Step 10800, Epoch 24.0, Batch Size = 256, Examples/Sec = 3844.76, Train LB = -372.910, Loss = 368.379
+Performance on test set:
+  Test Lower Bound = -368.904, Test Loss = 368.904
+[2018-06-06 13:39] Train Step 10825, Epoch 24.1, Batch Size = 256, Examples/Sec = 3834.34, Train LB = -369.594, Loss = 368.571
+[2018-06-06 13:39] Train Step 10850, Epoch 24.1, Batch Size = 256, Examples/Sec = 3839.41, Train LB = -371.484, Loss = 367.809
+[2018-06-06 13:39] Train Step 10875, Epoch 24.2, Batch Size = 256, Examples/Sec = 3819.60, Train LB = -362.723, Loss = 367.656
+[2018-06-06 13:39] Train Step 10900, Epoch 24.2, Batch Size = 256, Examples/Sec = 3857.45, Train LB = -373.390, Loss = 367.731
+[2018-06-06 13:39] Train Step 10925, Epoch 24.3, Batch Size = 256, Examples/Sec = 3845.06, Train LB = -360.494, Loss = 366.725
+[2018-06-06 13:39] Train Step 10950, Epoch 24.3, Batch Size = 256, Examples/Sec = 3824.15, Train LB = -366.120, Loss = 366.918
+[2018-06-06 13:39] Train Step 10975, Epoch 24.4, Batch Size = 256, Examples/Sec = 3803.08, Train LB = -378.626, Loss = 367.357
+[2018-06-06 13:40] Train Step 11000, Epoch 24.4, Batch Size = 256, Examples/Sec = 3823.64, Train LB = -364.080, Loss = 368.407
+Performance on test set:
+  Test Lower Bound = -368.997, Test Loss = 368.997
+[2018-06-06 13:40] Train Step 11025, Epoch 24.5, Batch Size = 256, Examples/Sec = 3794.05, Train LB = -358.030, Loss = 367.968
+[2018-06-06 13:40] Train Step 11050, Epoch 24.6, Batch Size = 256, Examples/Sec = 3809.47, Train LB = -367.205, Loss = 367.075
+[2018-06-06 13:40] Train Step 11075, Epoch 24.6, Batch Size = 256, Examples/Sec = 3745.10, Train LB = -361.439, Loss = 367.607
+[2018-06-06 13:40] Train Step 11100, Epoch 24.7, Batch Size = 256, Examples/Sec = 3815.94, Train LB = -364.244, Loss = 367.528
+[2018-06-06 13:40] Train Step 11125, Epoch 24.7, Batch Size = 256, Examples/Sec = 3809.18, Train LB = -369.471, Loss = 367.410
+[2018-06-06 13:40] Train Step 11150, Epoch 24.8, Batch Size = 256, Examples/Sec = 3661.54, Train LB = -362.342, Loss = 367.227
+[2018-06-06 13:40] Train Step 11175, Epoch 24.8, Batch Size = 256, Examples/Sec = 3800.99, Train LB = -369.303, Loss = 367.418
+[2018-06-06 13:40] Train Step 11200, Epoch 24.9, Batch Size = 256, Examples/Sec = 3809.08, Train LB = -370.747, Loss = 368.051
+Performance on test set:
+  Test Lower Bound = -368.193, Test Loss = 368.193
+[2018-06-06 13:40] Train Step 11225, Epoch 24.9, Batch Size = 256, Examples/Sec = 3818.62, Train LB = -365.705, Loss = 367.456
+[2018-06-06 13:40] Train Step 11250, Epoch 25.0, Batch Size = 256, Examples/Sec = 3779.60, Train LB = -371.527, Loss = 367.066
+[2018-06-06 13:40] Train Step 11275, Epoch 25.1, Batch Size = 256, Examples/Sec = 3804.83, Train LB = -367.476, Loss = 367.125
+[2018-06-06 13:40] Train Step 11300, Epoch 25.1, Batch Size = 256, Examples/Sec = 3819.07, Train LB = -358.179, Loss = 367.138
+[2018-06-06 13:40] Train Step 11325, Epoch 25.2, Batch Size = 256, Examples/Sec = 3808.28, Train LB = -371.836, Loss = 366.740
+[2018-06-06 13:40] Train Step 11350, Epoch 25.2, Batch Size = 256, Examples/Sec = 3797.27, Train LB = -367.162, Loss = 366.638
+[2018-06-06 13:40] Train Step 11375, Epoch 25.3, Batch Size = 256, Examples/Sec = 3791.47, Train LB = -371.201, Loss = 367.517
+[2018-06-06 13:40] Train Step 11400, Epoch 25.3, Batch Size = 256, Examples/Sec = 3825.23, Train LB = -369.638, Loss = 367.905
+Performance on test set:
+  Test Lower Bound = -370.171, Test Loss = 370.171
+[2018-06-06 13:40] Train Step 11425, Epoch 25.4, Batch Size = 256, Examples/Sec = 3800.82, Train LB = -375.267, Loss = 367.904
+[2018-06-06 13:40] Train Step 11450, Epoch 25.4, Batch Size = 256, Examples/Sec = 3795.40, Train LB = -380.381, Loss = 367.446
+[2018-06-06 13:40] Train Step 11475, Epoch 25.5, Batch Size = 256, Examples/Sec = 3795.01, Train LB = -374.090, Loss = 367.665
+[2018-06-06 13:40] Train Step 11500, Epoch 25.6, Batch Size = 256, Examples/Sec = 3816.27, Train LB = -359.825, Loss = 367.526
+[2018-06-06 13:40] Train Step 11525, Epoch 25.6, Batch Size = 256, Examples/Sec = 3799.74, Train LB = -359.944, Loss = 367.002
+[2018-06-06 13:40] Train Step 11550, Epoch 25.7, Batch Size = 256, Examples/Sec = 3821.13, Train LB = -370.448, Loss = 366.901
+[2018-06-06 13:40] Train Step 11575, Epoch 25.7, Batch Size = 256, Examples/Sec = 3803.13, Train LB = -369.934, Loss = 367.030
+[2018-06-06 13:40] Train Step 11600, Epoch 25.8, Batch Size = 256, Examples/Sec = 3780.66, Train LB = -369.469, Loss = 367.626
+Performance on test set:
+  Test Lower Bound = -368.639, Test Loss = 368.639
+[2018-06-06 13:40] Train Step 11625, Epoch 25.8, Batch Size = 256, Examples/Sec = 3781.83, Train LB = -368.123, Loss = 366.850
+[2018-06-06 13:40] Train Step 11650, Epoch 25.9, Batch Size = 256, Examples/Sec = 3796.19, Train LB = -369.969, Loss = 367.130
+[2018-06-06 13:40] Train Step 11675, Epoch 25.9, Batch Size = 256, Examples/Sec = 3809.46, Train LB = -352.272, Loss = 366.347
+[2018-06-06 13:40] Train Step 11700, Epoch 26.0, Batch Size = 256, Examples/Sec = 3827.41, Train LB = -359.363, Loss = 366.744
+[2018-06-06 13:40] Train Step 11725, Epoch 26.1, Batch Size = 256, Examples/Sec = 3826.89, Train LB = -370.898, Loss = 366.855
+[2018-06-06 13:40] Train Step 11750, Epoch 26.1, Batch Size = 256, Examples/Sec = 3804.71, Train LB = -369.386, Loss = 366.327
+[2018-06-06 13:40] Train Step 11775, Epoch 26.2, Batch Size = 256, Examples/Sec = 3799.74, Train LB = -365.836, Loss = 366.702
+[2018-06-06 13:41] Train Step 11800, Epoch 26.2, Batch Size = 256, Examples/Sec = 3809.07, Train LB = -362.425, Loss = 367.277
+Performance on test set:
+  Test Lower Bound = -367.686, Test Loss = 367.686
+[2018-06-06 13:41] Train Step 11825, Epoch 26.3, Batch Size = 256, Examples/Sec = 3785.53, Train LB = -365.018, Loss = 367.177
+[2018-06-06 13:41] Train Step 11850, Epoch 26.3, Batch Size = 256, Examples/Sec = 3724.61, Train LB = -366.806, Loss = 366.703
+[2018-06-06 13:41] Train Step 11875, Epoch 26.4, Batch Size = 256, Examples/Sec = 3793.32, Train LB = -351.571, Loss = 366.759
+[2018-06-06 13:41] Train Step 11900, Epoch 26.4, Batch Size = 256, Examples/Sec = 3804.60, Train LB = -363.098, Loss = 365.895
+[2018-06-06 13:41] Train Step 11925, Epoch 26.5, Batch Size = 256, Examples/Sec = 3817.53, Train LB = -359.631, Loss = 366.229
+[2018-06-06 13:41] Train Step 11950, Epoch 26.6, Batch Size = 256, Examples/Sec = 3801.38, Train LB = -372.058, Loss = 366.308
+[2018-06-06 13:41] Train Step 11975, Epoch 26.6, Batch Size = 256, Examples/Sec = 3804.48, Train LB = -372.926, Loss = 366.374
+[2018-06-06 13:41] Train Step 12000, Epoch 26.7, Batch Size = 256, Examples/Sec = 3811.74, Train LB = -368.110, Loss = 367.154
+Performance on test set:
+  Test Lower Bound = -367.248, Test Loss = 367.248
+[2018-06-06 13:41] Train Step 12025, Epoch 26.7, Batch Size = 256, Examples/Sec = 3833.08, Train LB = -364.024, Loss = 366.909
+[2018-06-06 13:41] Train Step 12050, Epoch 26.8, Batch Size = 256, Examples/Sec = 3734.88, Train LB = -356.227, Loss = 366.608
+[2018-06-06 13:41] Train Step 12075, Epoch 26.8, Batch Size = 256, Examples/Sec = 3746.52, Train LB = -356.734, Loss = 366.117
+[2018-06-06 13:41] Train Step 12100, Epoch 26.9, Batch Size = 256, Examples/Sec = 3801.21, Train LB = -355.642, Loss = 366.392
+[2018-06-06 13:41] Train Step 12125, Epoch 26.9, Batch Size = 256, Examples/Sec = 3818.17, Train LB = -365.652, Loss = 366.594
+[2018-06-06 13:41] Train Step 12150, Epoch 27.0, Batch Size = 256, Examples/Sec = 3758.90, Train LB = -366.888, Loss = 366.653
+[2018-06-06 13:41] Train Step 12175, Epoch 27.1, Batch Size = 256, Examples/Sec = 3822.49, Train LB = -361.042, Loss = 366.644
+[2018-06-06 13:41] Train Step 12200, Epoch 27.1, Batch Size = 256, Examples/Sec = 3800.53, Train LB = -369.259, Loss = 367.666
+Performance on test set:
+  Test Lower Bound = -367.443, Test Loss = 367.443
+[2018-06-06 13:41] Train Step 12225, Epoch 27.2, Batch Size = 256, Examples/Sec = 3814.06, Train LB = -381.212, Loss = 367.085
+[2018-06-06 13:41] Train Step 12250, Epoch 27.2, Batch Size = 256, Examples/Sec = 3780.77, Train LB = -374.095, Loss = 366.960
+[2018-06-06 13:41] Train Step 12275, Epoch 27.3, Batch Size = 256, Examples/Sec = 3803.70, Train LB = -375.292, Loss = 366.704
+[2018-06-06 13:41] Train Step 12300, Epoch 27.3, Batch Size = 256, Examples/Sec = 3813.21, Train LB = -362.421, Loss = 366.561
+[2018-06-06 13:41] Train Step 12325, Epoch 27.4, Batch Size = 256, Examples/Sec = 3716.45, Train LB = -358.389, Loss = 365.998
+[2018-06-06 13:41] Train Step 12350, Epoch 27.4, Batch Size = 256, Examples/Sec = 3801.89, Train LB = -353.296, Loss = 365.967
+[2018-06-06 13:41] Train Step 12375, Epoch 27.5, Batch Size = 256, Examples/Sec = 3800.53, Train LB = -359.331, Loss = 365.957
+[2018-06-06 13:41] Train Step 12400, Epoch 27.6, Batch Size = 256, Examples/Sec = 3801.95, Train LB = -360.616, Loss = 366.898
+Performance on test set:
+  Test Lower Bound = -368.264, Test Loss = 368.264
+[2018-06-06 13:41] Train Step 12425, Epoch 27.6, Batch Size = 256, Examples/Sec = 3816.62, Train LB = -370.624, Loss = 366.220
+[2018-06-06 13:41] Train Step 12450, Epoch 27.7, Batch Size = 256, Examples/Sec = 3801.15, Train LB = -362.459, Loss = 365.889
+[2018-06-06 13:41] Train Step 12475, Epoch 27.7, Batch Size = 256, Examples/Sec = 3804.65, Train LB = -361.321, Loss = 365.567
+[2018-06-06 13:41] Train Step 12500, Epoch 27.8, Batch Size = 256, Examples/Sec = 3799.23, Train LB = -368.411, Loss = 365.759
+[2018-06-06 13:41] Train Step 12525, Epoch 27.8, Batch Size = 256, Examples/Sec = 3803.12, Train LB = -367.425, Loss = 365.838
+[2018-06-06 13:41] Train Step 12550, Epoch 27.9, Batch Size = 256, Examples/Sec = 3795.58, Train LB = -375.774, Loss = 365.689
+[2018-06-06 13:41] Train Step 12575, Epoch 27.9, Batch Size = 256, Examples/Sec = 3823.40, Train LB = -369.040, Loss = 365.451
+[2018-06-06 13:42] Train Step 12600, Epoch 28.0, Batch Size = 256, Examples/Sec = 3721.69, Train LB = -374.899, Loss = 365.731
+Performance on test set:
+  Test Lower Bound = -368.401, Test Loss = 368.401
+[2018-06-06 13:42] Train Step 12625, Epoch 28.1, Batch Size = 256, Examples/Sec = 3810.26, Train LB = -373.293, Loss = 365.868
+[2018-06-06 13:42] Train Step 12650, Epoch 28.1, Batch Size = 256, Examples/Sec = 3811.39, Train LB = -360.134, Loss = 365.850
+[2018-06-06 13:42] Train Step 12675, Epoch 28.2, Batch Size = 256, Examples/Sec = 3785.81, Train LB = -367.244, Loss = 365.006
+[2018-06-06 13:42] Train Step 12700, Epoch 28.2, Batch Size = 256, Examples/Sec = 3813.88, Train LB = -356.297, Loss = 364.885
+[2018-06-06 13:42] Train Step 12725, Epoch 28.3, Batch Size = 256, Examples/Sec = 3779.26, Train LB = -368.639, Loss = 364.776
+[2018-06-06 13:42] Train Step 12750, Epoch 28.3, Batch Size = 256, Examples/Sec = 3808.96, Train LB = -371.064, Loss = 364.717
+[2018-06-06 13:42] Train Step 12775, Epoch 28.4, Batch Size = 256, Examples/Sec = 3800.87, Train LB = -370.726, Loss = 365.198
+[2018-06-06 13:42] Train Step 12800, Epoch 28.4, Batch Size = 256, Examples/Sec = 3800.36, Train LB = -356.858, Loss = 365.894
+Performance on test set:
+  Test Lower Bound = -366.780, Test Loss = 366.780
+[2018-06-06 13:42] Train Step 12825, Epoch 28.5, Batch Size = 256, Examples/Sec = 3809.08, Train LB = -371.000, Loss = 365.832
+[2018-06-06 13:42] Train Step 12850, Epoch 28.6, Batch Size = 256, Examples/Sec = 3815.54, Train LB = -368.250, Loss = 365.955
+[2018-06-06 13:42] Train Step 12875, Epoch 28.6, Batch Size = 256, Examples/Sec = 3826.84, Train LB = -353.611, Loss = 365.132
+[2018-06-06 13:42] Train Step 12900, Epoch 28.7, Batch Size = 256, Examples/Sec = 3826.32, Train LB = -361.821, Loss = 364.764
+[2018-06-06 13:42] Train Step 12925, Epoch 28.7, Batch Size = 256, Examples/Sec = 3837.05, Train LB = -372.428, Loss = 364.989
+[2018-06-06 13:42] Train Step 12950, Epoch 28.8, Batch Size = 256, Examples/Sec = 3803.80, Train LB = -370.367, Loss = 365.270
+[2018-06-06 13:42] Train Step 12975, Epoch 28.8, Batch Size = 256, Examples/Sec = 3795.86, Train LB = -371.197, Loss = 365.210
+[2018-06-06 13:42] Train Step 13000, Epoch 28.9, Batch Size = 256, Examples/Sec = 3800.87, Train LB = -377.498, Loss = 366.031
+Performance on test set:
+  Test Lower Bound = -367.217, Test Loss = 367.217
+[2018-06-06 13:42] Train Step 13025, Epoch 28.9, Batch Size = 256, Examples/Sec = 3721.20, Train LB = -363.421, Loss = 365.577
+[2018-06-06 13:42] Train Step 13050, Epoch 29.0, Batch Size = 256, Examples/Sec = 3808.78, Train LB = -354.891, Loss = 365.159
+[2018-06-06 13:42] Train Step 13075, Epoch 29.1, Batch Size = 256, Examples/Sec = 3752.68, Train LB = -367.817, Loss = 364.759
+[2018-06-06 13:42] Train Step 13100, Epoch 29.1, Batch Size = 256, Examples/Sec = 3805.79, Train LB = -359.417, Loss = 365.323
+[2018-06-06 13:42] Train Step 13125, Epoch 29.2, Batch Size = 256, Examples/Sec = 3804.99, Train LB = -380.060, Loss = 365.457
+[2018-06-06 13:42] Train Step 13150, Epoch 29.2, Batch Size = 256, Examples/Sec = 3737.55, Train LB = -353.177, Loss = 365.616
+[2018-06-06 13:42] Train Step 13175, Epoch 29.3, Batch Size = 256, Examples/Sec = 3809.58, Train LB = -371.489, Loss = 365.820
+[2018-06-06 13:42] Train Step 13200, Epoch 29.3, Batch Size = 256, Examples/Sec = 3806.85, Train LB = -374.466, Loss = 366.323
+Performance on test set:
+  Test Lower Bound = -367.754, Test Loss = 367.754
+[2018-06-06 13:42] Train Step 13225, Epoch 29.4, Batch Size = 256, Examples/Sec = 3824.10, Train LB = -370.888, Loss = 365.657
+[2018-06-06 13:42] Train Step 13250, Epoch 29.4, Batch Size = 256, Examples/Sec = 3821.97, Train LB = -363.486, Loss = 365.211
+[2018-06-06 13:42] Train Step 13275, Epoch 29.5, Batch Size = 256, Examples/Sec = 3778.09, Train LB = -365.931, Loss = 365.722
+[2018-06-06 13:42] Train Step 13300, Epoch 29.6, Batch Size = 256, Examples/Sec = 3741.53, Train LB = -361.665, Loss = 365.348
+[2018-06-06 13:42] Train Step 13325, Epoch 29.6, Batch Size = 256, Examples/Sec = 3819.42, Train LB = -361.652, Loss = 364.996
+[2018-06-06 13:42] Train Step 13350, Epoch 29.7, Batch Size = 256, Examples/Sec = 3791.76, Train LB = -367.498, Loss = 364.870
+[2018-06-06 13:42] Train Step 13375, Epoch 29.7, Batch Size = 256, Examples/Sec = 3794.61, Train LB = -357.221, Loss = 365.406
+[2018-06-06 13:43] Train Step 13400, Epoch 29.8, Batch Size = 256, Examples/Sec = 3821.81, Train LB = -368.490, Loss = 365.267
+Performance on test set:
+  Test Lower Bound = -367.009, Test Loss = 367.009
+[2018-06-06 13:43] Train Step 13425, Epoch 29.8, Batch Size = 256, Examples/Sec = 3808.96, Train LB = -361.336, Loss = 365.170
+[2018-06-06 13:43] Train Step 13450, Epoch 29.9, Batch Size = 256, Examples/Sec = 3801.49, Train LB = -383.243, Loss = 364.843
+[2018-06-06 13:43] Train Step 13475, Epoch 29.9, Batch Size = 256, Examples/Sec = 3786.98, Train LB = -360.754, Loss = 364.805
+[2018-06-06 13:43] Train Step 13500, Epoch 30.0, Batch Size = 256, Examples/Sec = 3823.35, Train LB = -369.204, Loss = 364.315
+[2018-06-06 13:43] Train Step 13525, Epoch 30.1, Batch Size = 256, Examples/Sec = 3821.35, Train LB = -365.378, Loss = 364.665
+[2018-06-06 13:43] Train Step 13550, Epoch 30.1, Batch Size = 256, Examples/Sec = 3797.09, Train LB = -373.400, Loss = 364.587
+[2018-06-06 13:43] Train Step 13575, Epoch 30.2, Batch Size = 256, Examples/Sec = 3728.74, Train LB = -358.002, Loss = 364.981
+[2018-06-06 13:43] Train Step 13600, Epoch 30.2, Batch Size = 256, Examples/Sec = 3777.04, Train LB = -380.233, Loss = 365.123
+Performance on test set:
+  Test Lower Bound = -366.904, Test Loss = 366.904
+[2018-06-06 13:43] Train Step 13625, Epoch 30.3, Batch Size = 256, Examples/Sec = 3812.07, Train LB = -348.757, Loss = 364.864
+[2018-06-06 13:43] Train Step 13650, Epoch 30.3, Batch Size = 256, Examples/Sec = 3801.82, Train LB = -364.264, Loss = 364.609
+[2018-06-06 13:43] Train Step 13675, Epoch 30.4, Batch Size = 256, Examples/Sec = 3807.49, Train LB = -366.733, Loss = 364.996
+[2018-06-06 13:43] Train Step 13700, Epoch 30.4, Batch Size = 256, Examples/Sec = 3810.20, Train LB = -367.664, Loss = 364.497
+[2018-06-06 13:43] Train Step 13725, Epoch 30.5, Batch Size = 256, Examples/Sec = 3824.71, Train LB = -362.343, Loss = 364.320
+[2018-06-06 13:43] Train Step 13750, Epoch 30.6, Batch Size = 256, Examples/Sec = 3815.66, Train LB = -347.909, Loss = 364.238
+[2018-06-06 13:43] Train Step 13775, Epoch 30.6, Batch Size = 256, Examples/Sec = 3796.07, Train LB = -358.875, Loss = 364.841
+[2018-06-06 13:43] Train Step 13800, Epoch 30.7, Batch Size = 256, Examples/Sec = 3813.37, Train LB = -360.168, Loss = 365.641
+Performance on test set:
+  Test Lower Bound = -367.367, Test Loss = 367.367
+[2018-06-06 13:43] Train Step 13825, Epoch 30.7, Batch Size = 256, Examples/Sec = 3807.14, Train LB = -362.060, Loss = 365.503
+[2018-06-06 13:43] Train Step 13850, Epoch 30.8, Batch Size = 256, Examples/Sec = 3836.48, Train LB = -349.417, Loss = 365.053
+[2018-06-06 13:43] Train Step 13875, Epoch 30.8, Batch Size = 256, Examples/Sec = 3830.44, Train LB = -355.721, Loss = 364.949
+[2018-06-06 13:43] Train Step 13900, Epoch 30.9, Batch Size = 256, Examples/Sec = 3807.03, Train LB = -348.215, Loss = 364.558
+[2018-06-06 13:43] Train Step 13925, Epoch 30.9, Batch Size = 256, Examples/Sec = 3813.21, Train LB = -372.982, Loss = 364.004
+[2018-06-06 13:43] Train Step 13950, Epoch 31.0, Batch Size = 256, Examples/Sec = 3801.03, Train LB = -353.134, Loss = 363.923
+[2018-06-06 13:43] Train Step 13975, Epoch 31.1, Batch Size = 256, Examples/Sec = 3794.80, Train LB = -363.547, Loss = 364.397
+[2018-06-06 13:43] Train Step 14000, Epoch 31.1, Batch Size = 256, Examples/Sec = 3807.99, Train LB = -371.605, Loss = 365.153
+Performance on test set:
+  Test Lower Bound = -366.164, Test Loss = 366.164
+[2018-06-06 13:43] Train Step 14025, Epoch 31.2, Batch Size = 256, Examples/Sec = 3788.38, Train LB = -359.673, Loss = 364.593
+[2018-06-06 13:43] Train Step 14050, Epoch 31.2, Batch Size = 256, Examples/Sec = 3833.71, Train LB = -370.183, Loss = 364.927
+[2018-06-06 13:43] Train Step 14075, Epoch 31.3, Batch Size = 256, Examples/Sec = 3743.78, Train LB = -357.812, Loss = 364.955
+[2018-06-06 13:43] Train Step 14100, Epoch 31.3, Batch Size = 256, Examples/Sec = 3779.21, Train LB = -353.492, Loss = 364.510
+[2018-06-06 13:43] Train Step 14125, Epoch 31.4, Batch Size = 256, Examples/Sec = 3804.82, Train LB = -358.737, Loss = 363.881
+[2018-06-06 13:43] Train Step 14150, Epoch 31.4, Batch Size = 256, Examples/Sec = 3721.69, Train LB = -355.675, Loss = 363.825
+[2018-06-06 13:43] Train Step 14175, Epoch 31.5, Batch Size = 256, Examples/Sec = 3795.58, Train LB = -370.533, Loss = 364.232
+[2018-06-06 13:44] Train Step 14200, Epoch 31.6, Batch Size = 256, Examples/Sec = 3813.72, Train LB = -379.499, Loss = 364.975
+Performance on test set:
+  Test Lower Bound = -366.178, Test Loss = 366.178
+[2018-06-06 13:44] Train Step 14225, Epoch 31.6, Batch Size = 256, Examples/Sec = 3811.91, Train LB = -372.665, Loss = 364.753
+[2018-06-06 13:44] Train Step 14250, Epoch 31.7, Batch Size = 256, Examples/Sec = 3808.28, Train LB = -360.152, Loss = 364.556
+[2018-06-06 13:44] Train Step 14275, Epoch 31.7, Batch Size = 256, Examples/Sec = 3709.56, Train LB = -355.061, Loss = 364.147
+[2018-06-06 13:44] Train Step 14300, Epoch 31.8, Batch Size = 256, Examples/Sec = 3819.24, Train LB = -361.330, Loss = 364.044
+[2018-06-06 13:44] Train Step 14325, Epoch 31.8, Batch Size = 256, Examples/Sec = 3801.66, Train LB = -362.551, Loss = 363.612
+[2018-06-06 13:44] Train Step 14350, Epoch 31.9, Batch Size = 256, Examples/Sec = 3802.51, Train LB = -366.364, Loss = 364.036
+[2018-06-06 13:44] Train Step 14375, Epoch 31.9, Batch Size = 256, Examples/Sec = 3786.86, Train LB = -368.932, Loss = 364.698
+[2018-06-06 13:44] Train Step 14400, Epoch 32.0, Batch Size = 256, Examples/Sec = 3817.99, Train LB = -363.069, Loss = 365.473
+Performance on test set:
+  Test Lower Bound = -366.933, Test Loss = 366.933
+[2018-06-06 13:44] Train Step 14425, Epoch 32.1, Batch Size = 256, Examples/Sec = 3814.17, Train LB = -351.169, Loss = 365.451
+[2018-06-06 13:44] Train Step 14450, Epoch 32.1, Batch Size = 256, Examples/Sec = 3815.14, Train LB = -367.766, Loss = 364.867
+[2018-06-06 13:44] Train Step 14475, Epoch 32.2, Batch Size = 256, Examples/Sec = 3820.62, Train LB = -354.188, Loss = 364.425
+[2018-06-06 13:44] Train Step 14500, Epoch 32.2, Batch Size = 256, Examples/Sec = 3817.53, Train LB = -360.093, Loss = 364.289
+[2018-06-06 13:44] Train Step 14525, Epoch 32.3, Batch Size = 256, Examples/Sec = 3816.34, Train LB = -366.256, Loss = 364.105
+[2018-06-06 13:44] Train Step 14550, Epoch 32.3, Batch Size = 256, Examples/Sec = 3732.86, Train LB = -358.850, Loss = 364.106
+[2018-06-06 13:44] Train Step 14575, Epoch 32.4, Batch Size = 256, Examples/Sec = 3814.86, Train LB = -372.376, Loss = 363.977
+[2018-06-06 13:44] Train Step 14600, Epoch 32.4, Batch Size = 256, Examples/Sec = 3808.85, Train LB = -363.132, Loss = 365.038
+Performance on test set:
+  Test Lower Bound = -365.952, Test Loss = 365.952
+[2018-06-06 13:44] Train Step 14625, Epoch 32.5, Batch Size = 256, Examples/Sec = 3820.55, Train LB = -344.636, Loss = 364.880
+[2018-06-06 13:44] Train Step 14650, Epoch 32.6, Batch Size = 256, Examples/Sec = 3841.09, Train LB = -365.942, Loss = 364.386
+[2018-06-06 13:44] Train Step 14675, Epoch 32.6, Batch Size = 256, Examples/Sec = 3822.26, Train LB = -348.536, Loss = 364.586
+[2018-06-06 13:44] Train Step 14700, Epoch 32.7, Batch Size = 256, Examples/Sec = 3824.94, Train LB = -353.372, Loss = 364.046
+[2018-06-06 13:44] Train Step 14725, Epoch 32.7, Batch Size = 256, Examples/Sec = 3826.27, Train LB = -365.529, Loss = 363.738
+[2018-06-06 13:44] Train Step 14750, Epoch 32.8, Batch Size = 256, Examples/Sec = 3813.10, Train LB = -364.405, Loss = 363.397
+[2018-06-06 13:44] Train Step 14775, Epoch 32.8, Batch Size = 256, Examples/Sec = 3803.47, Train LB = -362.123, Loss = 363.433
+[2018-06-06 13:44] Train Step 14800, Epoch 32.9, Batch Size = 256, Examples/Sec = 3808.22, Train LB = -374.895, Loss = 364.635
+Performance on test set:
+  Test Lower Bound = -366.097, Test Loss = 366.097
+[2018-06-06 13:44] Train Step 14825, Epoch 32.9, Batch Size = 256, Examples/Sec = 3793.89, Train LB = -357.131, Loss = 364.595
+[2018-06-06 13:44] Train Step 14850, Epoch 33.0, Batch Size = 256, Examples/Sec = 3799.40, Train LB = -371.189, Loss = 363.934
+[2018-06-06 13:44] Train Step 14875, Epoch 33.1, Batch Size = 256, Examples/Sec = 3808.61, Train LB = -369.510, Loss = 363.439
+[2018-06-06 13:44] Train Step 14900, Epoch 33.1, Batch Size = 256, Examples/Sec = 3816.62, Train LB = -371.785, Loss = 363.766
+[2018-06-06 13:44] Train Step 14925, Epoch 33.2, Batch Size = 256, Examples/Sec = 3822.95, Train LB = -363.447, Loss = 363.463
+[2018-06-06 13:44] Train Step 14950, Epoch 33.2, Batch Size = 256, Examples/Sec = 3778.55, Train LB = -354.385, Loss = 362.851
+[2018-06-06 13:44] Train Step 14975, Epoch 33.3, Batch Size = 256, Examples/Sec = 3799.00, Train LB = -378.770, Loss = 363.460
+[2018-06-06 13:45] Train Step 15000, Epoch 33.3, Batch Size = 256, Examples/Sec = 3800.13, Train LB = -374.398, Loss = 364.584
+Performance on test set:
+  Test Lower Bound = -367.955, Test Loss = 367.955
+[2018-06-06 13:45] Train Step 15025, Epoch 33.4, Batch Size = 256, Examples/Sec = 3827.41, Train LB = -364.568, Loss = 364.495
+[2018-06-06 13:45] Train Step 15050, Epoch 33.4, Batch Size = 256, Examples/Sec = 3811.11, Train LB = -357.662, Loss = 363.694
+[2018-06-06 13:45] Train Step 15075, Epoch 33.5, Batch Size = 256, Examples/Sec = 3785.98, Train LB = -352.370, Loss = 363.805
+[2018-06-06 13:45] Train Step 15100, Epoch 33.6, Batch Size = 256, Examples/Sec = 3803.08, Train LB = -362.940, Loss = 363.303
+[2018-06-06 13:45] Train Step 15125, Epoch 33.6, Batch Size = 256, Examples/Sec = 3790.28, Train LB = -364.926, Loss = 363.102
+[2018-06-06 13:45] Train Step 15150, Epoch 33.7, Batch Size = 256, Examples/Sec = 3805.27, Train LB = -359.303, Loss = 363.611
+[2018-06-06 13:45] Train Step 15175, Epoch 33.7, Batch Size = 256, Examples/Sec = 3790.58, Train LB = -370.196, Loss = 364.008
+[2018-06-06 13:45] Train Step 15200, Epoch 33.8, Batch Size = 256, Examples/Sec = 3814.18, Train LB = -369.873, Loss = 364.258
+Performance on test set:
+  Test Lower Bound = -365.955, Test Loss = 365.955
+[2018-06-06 13:45] Train Step 15225, Epoch 33.8, Batch Size = 256, Examples/Sec = 3818.12, Train LB = -368.718, Loss = 364.043
+[2018-06-06 13:45] Train Step 15250, Epoch 33.9, Batch Size = 256, Examples/Sec = 3811.11, Train LB = -362.392, Loss = 364.050
+[2018-06-06 13:45] Train Step 15275, Epoch 33.9, Batch Size = 256, Examples/Sec = 3723.91, Train LB = -366.211, Loss = 363.374
+[2018-06-06 13:45] Train Step 15300, Epoch 34.0, Batch Size = 256, Examples/Sec = 3814.70, Train LB = -355.166, Loss = 362.989
+[2018-06-06 13:45] Train Step 15325, Epoch 34.1, Batch Size = 256, Examples/Sec = 3814.75, Train LB = -354.293, Loss = 362.729
+[2018-06-06 13:45] Train Step 15350, Epoch 34.1, Batch Size = 256, Examples/Sec = 3819.35, Train LB = -351.162, Loss = 362.903
+[2018-06-06 13:45] Train Step 15375, Epoch 34.2, Batch Size = 256, Examples/Sec = 3806.53, Train LB = -372.132, Loss = 363.289
+[2018-06-06 13:45] Train Step 15400, Epoch 34.2, Batch Size = 256, Examples/Sec = 3813.67, Train LB = -367.457, Loss = 364.131
+Performance on test set:
+  Test Lower Bound = -365.716, Test Loss = 365.716
+[2018-06-06 13:45] Train Step 15425, Epoch 34.3, Batch Size = 256, Examples/Sec = 3798.27, Train LB = -347.740, Loss = 363.681
+[2018-06-06 13:45] Train Step 15450, Epoch 34.3, Batch Size = 256, Examples/Sec = 3781.05, Train LB = -367.551, Loss = 363.814
+[2018-06-06 13:45] Train Step 15475, Epoch 34.4, Batch Size = 256, Examples/Sec = 3792.14, Train LB = -367.562, Loss = 363.182
+[2018-06-06 13:45] Train Step 15500, Epoch 34.4, Batch Size = 256, Examples/Sec = 3815.43, Train LB = -362.016, Loss = 362.851
+[2018-06-06 13:45] Train Step 15525, Epoch 34.5, Batch Size = 256, Examples/Sec = 3826.95, Train LB = -364.394, Loss = 362.896
+[2018-06-06 13:45] Train Step 15550, Epoch 34.6, Batch Size = 256, Examples/Sec = 3712.57, Train LB = -362.557, Loss = 363.404
+[2018-06-06 13:45] Train Step 15575, Epoch 34.6, Batch Size = 256, Examples/Sec = 3818.74, Train LB = -359.918, Loss = 364.147
+[2018-06-06 13:45] Train Step 15600, Epoch 34.7, Batch Size = 256, Examples/Sec = 3822.10, Train LB = -367.362, Loss = 364.046
+Performance on test set:
+  Test Lower Bound = -365.368, Test Loss = 365.368
+[2018-06-06 13:45] Train Step 15625, Epoch 34.7, Batch Size = 256, Examples/Sec = 3823.98, Train LB = -356.734, Loss = 363.578
+[2018-06-06 13:45] Train Step 15650, Epoch 34.8, Batch Size = 256, Examples/Sec = 3773.30, Train LB = -365.614, Loss = 364.072
+[2018-06-06 13:45] Train Step 15675, Epoch 34.8, Batch Size = 256, Examples/Sec = 3792.25, Train LB = -368.128, Loss = 363.785
+[2018-06-06 13:45] Train Step 15700, Epoch 34.9, Batch Size = 256, Examples/Sec = 3806.58, Train LB = -355.152, Loss = 363.144
+[2018-06-06 13:45] Train Step 15725, Epoch 34.9, Batch Size = 256, Examples/Sec = 3753.45, Train LB = -354.378, Loss = 362.775
+[2018-06-06 13:45] Train Step 15750, Epoch 35.0, Batch Size = 256, Examples/Sec = 3816.34, Train LB = -361.542, Loss = 362.501
+[2018-06-06 13:45] Train Step 15775, Epoch 35.1, Batch Size = 256, Examples/Sec = 3806.12, Train LB = -367.109, Loss = 362.769
+[2018-06-06 13:46] Train Step 15800, Epoch 35.1, Batch Size = 256, Examples/Sec = 3723.15, Train LB = -369.084, Loss = 364.142
+Performance on test set:
+  Test Lower Bound = -365.976, Test Loss = 365.976
+[2018-06-06 13:46] Train Step 15825, Epoch 35.2, Batch Size = 256, Examples/Sec = 3826.48, Train LB = -347.856, Loss = 363.942
+[2018-06-06 13:46] Train Step 15850, Epoch 35.2, Batch Size = 256, Examples/Sec = 3791.98, Train LB = -355.200, Loss = 363.525
+[2018-06-06 13:46] Train Step 15875, Epoch 35.3, Batch Size = 256, Examples/Sec = 3810.20, Train LB = -356.172, Loss = 363.190
+[2018-06-06 13:46] Train Step 15900, Epoch 35.3, Batch Size = 256, Examples/Sec = 3799.46, Train LB = -366.500, Loss = 363.060
+[2018-06-06 13:46] Train Step 15925, Epoch 35.4, Batch Size = 256, Examples/Sec = 3817.65, Train LB = -364.713, Loss = 362.889
+[2018-06-06 13:46] Train Step 15950, Epoch 35.4, Batch Size = 256, Examples/Sec = 3799.12, Train LB = -371.471, Loss = 363.095
+[2018-06-06 13:46] Train Step 15975, Epoch 35.5, Batch Size = 256, Examples/Sec = 3808.78, Train LB = -377.049, Loss = 363.403
+[2018-06-06 13:46] Train Step 16000, Epoch 35.6, Batch Size = 256, Examples/Sec = 3807.03, Train LB = -367.668, Loss = 363.766
+Performance on test set:
+  Test Lower Bound = -365.619, Test Loss = 365.619
+[2018-06-06 13:46] Train Step 16025, Epoch 35.6, Batch Size = 256, Examples/Sec = 3802.28, Train LB = -365.036, Loss = 363.341
+[2018-06-06 13:46] Train Step 16050, Epoch 35.7, Batch Size = 256, Examples/Sec = 3807.08, Train LB = -362.524, Loss = 363.035
+[2018-06-06 13:46] Train Step 16075, Epoch 35.7, Batch Size = 256, Examples/Sec = 3821.69, Train LB = -358.982, Loss = 363.216
+[2018-06-06 13:46] Train Step 16100, Epoch 35.8, Batch Size = 256, Examples/Sec = 3814.06, Train LB = -366.152, Loss = 362.858
+[2018-06-06 13:46] Train Step 16125, Epoch 35.8, Batch Size = 256, Examples/Sec = 3807.93, Train LB = -373.423, Loss = 362.136
+[2018-06-06 13:46] Train Step 16150, Epoch 35.9, Batch Size = 256, Examples/Sec = 3817.87, Train LB = -360.839, Loss = 362.666
+[2018-06-06 13:46] Train Step 16175, Epoch 35.9, Batch Size = 256, Examples/Sec = 3811.51, Train LB = -366.983, Loss = 363.074
+[2018-06-06 13:46] Train Step 16200, Epoch 36.0, Batch Size = 256, Examples/Sec = 3802.12, Train LB = -377.650, Loss = 363.581
+Performance on test set:
+  Test Lower Bound = -365.491, Test Loss = 365.491
+[2018-06-06 13:46] Train Step 16225, Epoch 36.1, Batch Size = 256, Examples/Sec = 3797.54, Train LB = -352.460, Loss = 363.189
+[2018-06-06 13:46] Train Step 16250, Epoch 36.1, Batch Size = 256, Examples/Sec = 3736.79, Train LB = -365.498, Loss = 362.930
+[2018-06-06 13:46] Train Step 16275, Epoch 36.2, Batch Size = 256, Examples/Sec = 3745.87, Train LB = -354.785, Loss = 362.665
+[2018-06-06 13:46] Train Step 16300, Epoch 36.2, Batch Size = 256, Examples/Sec = 3830.33, Train LB = -363.561, Loss = 362.510
+[2018-06-06 13:46] Train Step 16325, Epoch 36.3, Batch Size = 256, Examples/Sec = 3800.47, Train LB = -361.505, Loss = 363.231
+[2018-06-06 13:46] Train Step 16350, Epoch 36.3, Batch Size = 256, Examples/Sec = 3749.71, Train LB = -363.010, Loss = 363.486
+[2018-06-06 13:46] Train Step 16375, Epoch 36.4, Batch Size = 256, Examples/Sec = 3795.07, Train LB = -364.903, Loss = 363.196
+[2018-06-06 13:46] Train Step 16400, Epoch 36.4, Batch Size = 256, Examples/Sec = 3812.30, Train LB = -376.610, Loss = 363.510
+Performance on test set:
+  Test Lower Bound = -366.060, Test Loss = 366.060
+[2018-06-06 13:46] Train Step 16425, Epoch 36.5, Batch Size = 256, Examples/Sec = 3805.06, Train LB = -358.736, Loss = 363.358
+[2018-06-06 13:46] Train Step 16450, Epoch 36.6, Batch Size = 256, Examples/Sec = 3815.84, Train LB = -361.897, Loss = 362.662
+[2018-06-06 13:46] Train Step 16475, Epoch 36.6, Batch Size = 256, Examples/Sec = 3816.28, Train LB = -364.290, Loss = 362.540
+[2018-06-06 13:46] Train Step 16500, Epoch 36.7, Batch Size = 256, Examples/Sec = 3790.90, Train LB = -374.236, Loss = 362.125
+[2018-06-06 13:46] Train Step 16525, Epoch 36.7, Batch Size = 256, Examples/Sec = 3719.75, Train LB = -376.457, Loss = 361.809
+[2018-06-06 13:46] Train Step 16550, Epoch 36.8, Batch Size = 256, Examples/Sec = 3823.23, Train LB = -375.429, Loss = 361.794
+[2018-06-06 13:46] Train Step 16575, Epoch 36.8, Batch Size = 256, Examples/Sec = 3817.59, Train LB = -358.351, Loss = 362.906
+[2018-06-06 13:47] Train Step 16600, Epoch 36.9, Batch Size = 256, Examples/Sec = 3712.18, Train LB = -373.885, Loss = 363.277
+Performance on test set:
+  Test Lower Bound = -364.516, Test Loss = 364.516
+[2018-06-06 13:47] Train Step 16625, Epoch 36.9, Batch Size = 256, Examples/Sec = 3801.43, Train LB = -361.936, Loss = 363.064
+[2018-06-06 13:47] Train Step 16650, Epoch 37.0, Batch Size = 256, Examples/Sec = 3825.17, Train LB = -359.920, Loss = 362.573
+[2018-06-06 13:47] Train Step 16675, Epoch 37.1, Batch Size = 256, Examples/Sec = 3818.50, Train LB = -354.227, Loss = 362.339
+[2018-06-06 13:47] Train Step 16700, Epoch 37.1, Batch Size = 256, Examples/Sec = 3734.40, Train LB = -358.588, Loss = 361.671
+[2018-06-06 13:47] Train Step 16725, Epoch 37.2, Batch Size = 256, Examples/Sec = 3740.22, Train LB = -348.674, Loss = 361.488
+[2018-06-06 13:47] Train Step 16750, Epoch 37.2, Batch Size = 256, Examples/Sec = 3811.80, Train LB = -362.277, Loss = 361.886
+[2018-06-06 13:47] Train Step 16775, Epoch 37.3, Batch Size = 256, Examples/Sec = 3831.77, Train LB = -371.289, Loss = 362.347
+[2018-06-06 13:47] Train Step 16800, Epoch 37.3, Batch Size = 256, Examples/Sec = 3678.58, Train LB = -351.494, Loss = 363.165
+Performance on test set:
+  Test Lower Bound = -364.622, Test Loss = 364.622
+[2018-06-06 13:47] Train Step 16825, Epoch 37.4, Batch Size = 256, Examples/Sec = 3760.01, Train LB = -368.593, Loss = 362.252
+[2018-06-06 13:47] Train Step 16850, Epoch 37.4, Batch Size = 256, Examples/Sec = 3816.23, Train LB = -352.039, Loss = 362.354
+[2018-06-06 13:47] Train Step 16875, Epoch 37.5, Batch Size = 256, Examples/Sec = 3836.30, Train LB = -349.711, Loss = 362.454
+[2018-06-06 13:47] Train Step 16900, Epoch 37.6, Batch Size = 256, Examples/Sec = 3815.09, Train LB = -337.623, Loss = 361.919
+[2018-06-06 13:47] Train Step 16925, Epoch 37.6, Batch Size = 256, Examples/Sec = 3803.59, Train LB = -369.302, Loss = 361.510
+[2018-06-06 13:47] Train Step 16950, Epoch 37.7, Batch Size = 256, Examples/Sec = 3817.19, Train LB = -358.037, Loss = 362.155
+[2018-06-06 13:47] Train Step 16975, Epoch 37.7, Batch Size = 256, Examples/Sec = 3802.05, Train LB = -364.450, Loss = 362.348
+[2018-06-06 13:47] Train Step 17000, Epoch 37.8, Batch Size = 256, Examples/Sec = 3715.91, Train LB = -369.119, Loss = 363.364
+Performance on test set:
+  Test Lower Bound = -365.377, Test Loss = 365.377
+[2018-06-06 13:47] Train Step 17025, Epoch 37.8, Batch Size = 256, Examples/Sec = 3000.33, Train LB = -351.071, Loss = 362.840
+[2018-06-06 13:47] Train Step 17050, Epoch 37.9, Batch Size = 256, Examples/Sec = 3666.78, Train LB = -375.023, Loss = 362.712
+[2018-06-06 13:47] Train Step 17075, Epoch 37.9, Batch Size = 256, Examples/Sec = 2611.74, Train LB = -366.034, Loss = 362.895
+[2018-06-06 13:47] Train Step 17100, Epoch 38.0, Batch Size = 256, Examples/Sec = 3739.14, Train LB = -359.265, Loss = 362.652
+[2018-06-06 13:47] Train Step 17125, Epoch 38.1, Batch Size = 256, Examples/Sec = 3695.79, Train LB = -352.439, Loss = 362.089
+[2018-06-06 13:47] Train Step 17150, Epoch 38.1, Batch Size = 256, Examples/Sec = 3802.40, Train LB = -362.953, Loss = 361.655
+[2018-06-06 13:47] Train Step 17175, Epoch 38.2, Batch Size = 256, Examples/Sec = 3782.95, Train LB = -361.527, Loss = 362.157
+[2018-06-06 13:47] Train Step 17200, Epoch 38.2, Batch Size = 256, Examples/Sec = 3723.53, Train LB = -362.851, Loss = 362.608
+Performance on test set:
+  Test Lower Bound = -366.153, Test Loss = 366.153
+[2018-06-06 13:47] Train Step 17225, Epoch 38.3, Batch Size = 256, Examples/Sec = 3768.03, Train LB = -368.029, Loss = 362.275
+[2018-06-06 13:47] Train Step 17250, Epoch 38.3, Batch Size = 256, Examples/Sec = 2872.27, Train LB = -366.663, Loss = 362.334
+[2018-06-06 13:47] Train Step 17275, Epoch 38.4, Batch Size = 256, Examples/Sec = 3712.95, Train LB = -350.672, Loss = 362.201
+[2018-06-06 13:47] Train Step 17300, Epoch 38.4, Batch Size = 256, Examples/Sec = 3690.41, Train LB = -366.964, Loss = 361.520
+[2018-06-06 13:47] Train Step 17325, Epoch 38.5, Batch Size = 256, Examples/Sec = 2884.25, Train LB = -377.656, Loss = 361.262
+[2018-06-06 13:47] Train Step 17350, Epoch 38.6, Batch Size = 256, Examples/Sec = 3797.88, Train LB = -371.157, Loss = 361.265
+[2018-06-06 13:48] Train Step 17375, Epoch 38.6, Batch Size = 256, Examples/Sec = 3781.83, Train LB = -384.950, Loss = 361.957
+[2018-06-06 13:48] Train Step 17400, Epoch 38.7, Batch Size = 256, Examples/Sec = 3820.67, Train LB = -359.255, Loss = 363.032
+Performance on test set:
+  Test Lower Bound = -366.039, Test Loss = 366.039
+[2018-06-06 13:48] Train Step 17425, Epoch 38.7, Batch Size = 256, Examples/Sec = 3244.08, Train LB = -358.261, Loss = 362.275
+[2018-06-06 13:48] Train Step 17450, Epoch 38.8, Batch Size = 256, Examples/Sec = 3827.86, Train LB = -360.112, Loss = 362.093
+[2018-06-06 13:48] Train Step 17475, Epoch 38.8, Batch Size = 256, Examples/Sec = 3788.67, Train LB = -351.051, Loss = 362.113
+[2018-06-06 13:48] Train Step 17500, Epoch 38.9, Batch Size = 256, Examples/Sec = 3792.53, Train LB = -359.055, Loss = 361.959
+[2018-06-06 13:48] Train Step 17525, Epoch 38.9, Batch Size = 256, Examples/Sec = 3825.41, Train LB = -356.356, Loss = 362.105
+[2018-06-06 13:48] Train Step 17550, Epoch 39.0, Batch Size = 256, Examples/Sec = 3795.40, Train LB = -365.926, Loss = 361.743
+[2018-06-06 13:48] Train Step 17575, Epoch 39.1, Batch Size = 256, Examples/Sec = 3812.81, Train LB = -374.121, Loss = 361.567
+[2018-06-06 13:48] Train Step 17600, Epoch 39.1, Batch Size = 256, Examples/Sec = 3654.01, Train LB = -362.543, Loss = 362.411
+Performance on test set:
+  Test Lower Bound = -364.519, Test Loss = 364.519
+[2018-06-06 13:48] Train Step 17625, Epoch 39.2, Batch Size = 256, Examples/Sec = 3805.79, Train LB = -354.198, Loss = 361.617
+[2018-06-06 13:48] Train Step 17650, Epoch 39.2, Batch Size = 256, Examples/Sec = 3831.07, Train LB = -361.897, Loss = 361.459
+[2018-06-06 13:48] Train Step 17675, Epoch 39.3, Batch Size = 256, Examples/Sec = 3781.67, Train LB = -365.023, Loss = 361.566
+[2018-06-06 13:48] Train Step 17700, Epoch 39.3, Batch Size = 256, Examples/Sec = 3798.56, Train LB = -354.255, Loss = 361.614
+[2018-06-06 13:48] Train Step 17725, Epoch 39.4, Batch Size = 256, Examples/Sec = 3803.64, Train LB = -349.130, Loss = 361.472
+[2018-06-06 13:48] Train Step 17750, Epoch 39.4, Batch Size = 256, Examples/Sec = 3790.56, Train LB = -348.252, Loss = 361.311
+[2018-06-06 13:48] Train Step 17775, Epoch 39.5, Batch Size = 256, Examples/Sec = 3604.16, Train LB = -355.919, Loss = 361.556
+[2018-06-06 13:48] Train Step 17800, Epoch 39.6, Batch Size = 256, Examples/Sec = 3651.61, Train LB = -375.664, Loss = 362.292
+Performance on test set:
+  Test Lower Bound = -365.382, Test Loss = 365.382
+[2018-06-06 13:48] Train Step 17825, Epoch 39.6, Batch Size = 256, Examples/Sec = 3686.27, Train LB = -374.699, Loss = 362.418
+[2018-06-06 13:48] Train Step 17850, Epoch 39.7, Batch Size = 256, Examples/Sec = 3662.85, Train LB = -352.147, Loss = 362.074
+[2018-06-06 13:48] Train Step 17875, Epoch 39.7, Batch Size = 256, Examples/Sec = 3582.73, Train LB = -354.377, Loss = 361.676
+[2018-06-06 13:48] Train Step 17900, Epoch 39.8, Batch Size = 256, Examples/Sec = 3794.27, Train LB = -350.942, Loss = 361.219
+[2018-06-06 13:48] Train Step 17925, Epoch 39.8, Batch Size = 256, Examples/Sec = 3717.41, Train LB = -361.639, Loss = 361.101
+[2018-06-06 13:48] Train Step 17950, Epoch 39.9, Batch Size = 256, Examples/Sec = 3769.91, Train LB = -365.807, Loss = 361.399
+[2018-06-06 13:48] Train Step 17975, Epoch 39.9, Batch Size = 256, Examples/Sec = 3703.00, Train LB = -365.913, Loss = 361.917
+[2018-06-06 13:48] Train Step 18000, Epoch 40.0, Batch Size = 256, Examples/Sec = 3808.05, Train LB = -352.231, Loss = 362.821
+Performance on test set:
+  Test Lower Bound = -364.688, Test Loss = 364.688
+[2018-06-06 13:48] Train Step 18025, Epoch 40.1, Batch Size = 256, Examples/Sec = 3810.09, Train LB = -355.607, Loss = 362.431
+[2018-06-06 13:48] Train Step 18050, Epoch 40.1, Batch Size = 256, Examples/Sec = 3814.70, Train LB = -366.899, Loss = 361.744
+[2018-06-06 13:48] Train Step 18075, Epoch 40.2, Batch Size = 256, Examples/Sec = 3777.54, Train LB = -357.511, Loss = 361.388
+[2018-06-06 13:48] Train Step 18100, Epoch 40.2, Batch Size = 256, Examples/Sec = 3804.49, Train LB = -358.554, Loss = 361.384
+[2018-06-06 13:48] Train Step 18125, Epoch 40.3, Batch Size = 256, Examples/Sec = 3792.30, Train LB = -360.852, Loss = 360.835
+[2018-06-06 13:48] Train Step 18150, Epoch 40.3, Batch Size = 256, Examples/Sec = 3801.54, Train LB = -363.204, Loss = 360.825
+[2018-06-06 13:49] Train Step 18175, Epoch 40.4, Batch Size = 256, Examples/Sec = 3809.30, Train LB = -375.777, Loss = 361.350
+[2018-06-06 13:49] Train Step 18200, Epoch 40.4, Batch Size = 256, Examples/Sec = 3805.40, Train LB = -365.448, Loss = 362.574
+Performance on test set:
+  Test Lower Bound = -365.024, Test Loss = 365.024
+[2018-06-06 13:49] Train Step 18225, Epoch 40.5, Batch Size = 256, Examples/Sec = 3805.40, Train LB = -363.787, Loss = 362.624
+[2018-06-06 13:49] Train Step 18250, Epoch 40.6, Batch Size = 256, Examples/Sec = 3801.10, Train LB = -350.811, Loss = 361.925
+[2018-06-06 13:49] Train Step 18275, Epoch 40.6, Batch Size = 256, Examples/Sec = 3702.21, Train LB = -361.661, Loss = 361.237
+[2018-06-06 13:49] Train Step 18300, Epoch 40.7, Batch Size = 256, Examples/Sec = 3814.86, Train LB = -352.210, Loss = 361.281
+[2018-06-06 13:49] Train Step 18325, Epoch 40.7, Batch Size = 256, Examples/Sec = 3806.87, Train LB = -355.078, Loss = 360.810
+[2018-06-06 13:49] Train Step 18350, Epoch 40.8, Batch Size = 256, Examples/Sec = 3815.09, Train LB = -370.382, Loss = 360.454
+[2018-06-06 13:49] Train Step 18375, Epoch 40.8, Batch Size = 256, Examples/Sec = 3800.53, Train LB = -359.841, Loss = 361.442
+[2018-06-06 13:49] Train Step 18400, Epoch 40.9, Batch Size = 256, Examples/Sec = 3795.51, Train LB = -361.729, Loss = 362.433
+Performance on test set:
+  Test Lower Bound = -363.824, Test Loss = 363.824
+[2018-06-06 13:49] Train Step 18425, Epoch 40.9, Batch Size = 256, Examples/Sec = 3817.41, Train LB = -363.298, Loss = 362.142
+[2018-06-06 13:49] Train Step 18450, Epoch 41.0, Batch Size = 256, Examples/Sec = 3808.23, Train LB = -376.151, Loss = 361.457
+[2018-06-06 13:49] Train Step 18475, Epoch 41.1, Batch Size = 256, Examples/Sec = 3816.57, Train LB = -353.335, Loss = 360.735
+[2018-06-06 13:49] Train Step 18500, Epoch 41.1, Batch Size = 256, Examples/Sec = 3806.53, Train LB = -363.976, Loss = 360.563
+[2018-06-06 13:49] Train Step 18525, Epoch 41.2, Batch Size = 256, Examples/Sec = 3796.53, Train LB = -351.139, Loss = 360.151
+[2018-06-06 13:49] Train Step 18550, Epoch 41.2, Batch Size = 256, Examples/Sec = 3723.05, Train LB = -366.384, Loss = 360.791
+[2018-06-06 13:49] Train Step 18575, Epoch 41.3, Batch Size = 256, Examples/Sec = 3801.49, Train LB = -355.387, Loss = 361.874
+[2018-06-06 13:49] Train Step 18600, Epoch 41.3, Batch Size = 256, Examples/Sec = 3805.17, Train LB = -366.734, Loss = 362.336
+Performance on test set:
+  Test Lower Bound = -364.866, Test Loss = 364.866
+[2018-06-06 13:49] Train Step 18625, Epoch 41.4, Batch Size = 256, Examples/Sec = 3823.92, Train LB = -363.551, Loss = 362.518
+[2018-06-06 13:49] Train Step 18650, Epoch 41.4, Batch Size = 256, Examples/Sec = 3802.79, Train LB = -352.622, Loss = 362.057
+[2018-06-06 13:49] Train Step 18675, Epoch 41.5, Batch Size = 256, Examples/Sec = 3810.61, Train LB = -357.952, Loss = 361.595
+[2018-06-06 13:49] Train Step 18700, Epoch 41.6, Batch Size = 256, Examples/Sec = 3810.66, Train LB = -350.583, Loss = 361.239
+[2018-06-06 13:49] Train Step 18725, Epoch 41.6, Batch Size = 256, Examples/Sec = 3833.66, Train LB = -366.762, Loss = 360.649
+[2018-06-06 13:49] Train Step 18750, Epoch 41.7, Batch Size = 256, Examples/Sec = 3821.36, Train LB = -364.285, Loss = 361.107
+[2018-06-06 13:49] Train Step 18775, Epoch 41.7, Batch Size = 256, Examples/Sec = 3792.83, Train LB = -368.003, Loss = 361.513
+[2018-06-06 13:49] Train Step 18800, Epoch 41.8, Batch Size = 256, Examples/Sec = 3810.27, Train LB = -367.503, Loss = 361.954
+Performance on test set:
+  Test Lower Bound = -365.293, Test Loss = 365.293
+[2018-06-06 13:49] Train Step 18825, Epoch 41.8, Batch Size = 256, Examples/Sec = 3732.92, Train LB = -359.709, Loss = 361.968
+[2018-06-06 13:49] Train Step 18850, Epoch 41.9, Batch Size = 256, Examples/Sec = 3821.76, Train LB = -352.066, Loss = 361.378
+[2018-06-06 13:49] Train Step 18875, Epoch 41.9, Batch Size = 256, Examples/Sec = 3788.77, Train LB = -356.952, Loss = 361.071
+[2018-06-06 13:49] Train Step 18900, Epoch 42.0, Batch Size = 256, Examples/Sec = 3747.89, Train LB = -359.281, Loss = 360.788
+[2018-06-06 13:49] Train Step 18925, Epoch 42.1, Batch Size = 256, Examples/Sec = 3828.61, Train LB = -352.451, Loss = 360.919
+[2018-06-06 13:49] Train Step 18950, Epoch 42.1, Batch Size = 256, Examples/Sec = 3815.54, Train LB = -359.467, Loss = 360.828
+[2018-06-06 13:50] Train Step 18975, Epoch 42.2, Batch Size = 256, Examples/Sec = 3743.57, Train LB = -362.246, Loss = 361.048
+[2018-06-06 13:50] Train Step 19000, Epoch 42.2, Batch Size = 256, Examples/Sec = 3790.79, Train LB = -358.238, Loss = 361.304
+Performance on test set:
+  Test Lower Bound = -364.105, Test Loss = 364.105
+[2018-06-06 13:50] Train Step 19025, Epoch 42.3, Batch Size = 256, Examples/Sec = 3809.80, Train LB = -366.614, Loss = 360.832
+[2018-06-06 13:50] Train Step 19050, Epoch 42.3, Batch Size = 256, Examples/Sec = 3831.81, Train LB = -357.137, Loss = 361.323
+[2018-06-06 13:50] Train Step 19075, Epoch 42.4, Batch Size = 256, Examples/Sec = 3713.04, Train LB = -367.672, Loss = 360.807
+[2018-06-06 13:50] Train Step 19100, Epoch 42.4, Batch Size = 256, Examples/Sec = 3798.77, Train LB = -371.505, Loss = 360.137
+[2018-06-06 13:50] Train Step 19125, Epoch 42.5, Batch Size = 256, Examples/Sec = 3801.10, Train LB = -349.128, Loss = 360.228
+[2018-06-06 13:50] Train Step 19150, Epoch 42.6, Batch Size = 256, Examples/Sec = 3795.63, Train LB = -355.777, Loss = 360.033
+[2018-06-06 13:50] Train Step 19175, Epoch 42.6, Batch Size = 256, Examples/Sec = 3828.84, Train LB = -372.541, Loss = 360.510
+[2018-06-06 13:50] Train Step 19200, Epoch 42.7, Batch Size = 256, Examples/Sec = 3778.65, Train LB = -378.021, Loss = 361.486
+Performance on test set:
+  Test Lower Bound = -364.199, Test Loss = 364.199
+[2018-06-06 13:50] Train Step 19225, Epoch 42.7, Batch Size = 256, Examples/Sec = 3798.50, Train LB = -367.615, Loss = 361.815
+[2018-06-06 13:50] Train Step 19250, Epoch 42.8, Batch Size = 256, Examples/Sec = 3801.84, Train LB = -367.236, Loss = 361.137
+[2018-06-06 13:50] Train Step 19275, Epoch 42.8, Batch Size = 256, Examples/Sec = 3733.20, Train LB = -358.862, Loss = 360.822
+[2018-06-06 13:50] Train Step 19300, Epoch 42.9, Batch Size = 256, Examples/Sec = 3807.26, Train LB = -368.825, Loss = 360.335
+[2018-06-06 13:50] Train Step 19325, Epoch 42.9, Batch Size = 256, Examples/Sec = 3825.39, Train LB = -366.173, Loss = 360.274
+[2018-06-06 13:50] Train Step 19350, Epoch 43.0, Batch Size = 256, Examples/Sec = 3709.50, Train LB = -364.233, Loss = 360.431
+[2018-06-06 13:50] Train Step 19375, Epoch 43.1, Batch Size = 256, Examples/Sec = 3779.72, Train LB = -366.346, Loss = 361.202
+[2018-06-06 13:50] Train Step 19400, Epoch 43.1, Batch Size = 256, Examples/Sec = 3820.28, Train LB = -359.629, Loss = 362.229
+Performance on test set:
+  Test Lower Bound = -365.227, Test Loss = 365.227
+[2018-06-06 13:50] Train Step 19425, Epoch 43.2, Batch Size = 256, Examples/Sec = 3807.65, Train LB = -364.601, Loss = 361.966
+[2018-06-06 13:50] Train Step 19450, Epoch 43.2, Batch Size = 256, Examples/Sec = 3824.49, Train LB = -367.192, Loss = 361.500
+[2018-06-06 13:50] Train Step 19475, Epoch 43.3, Batch Size = 256, Examples/Sec = 3821.99, Train LB = -371.739, Loss = 360.928
+[2018-06-06 13:50] Train Step 19500, Epoch 43.3, Batch Size = 256, Examples/Sec = 3821.97, Train LB = -371.562, Loss = 360.616
+[2018-06-06 13:50] Train Step 19525, Epoch 43.4, Batch Size = 256, Examples/Sec = 3819.07, Train LB = -360.856, Loss = 360.365
+[2018-06-06 13:50] Train Step 19550, Epoch 43.4, Batch Size = 256, Examples/Sec = 3733.20, Train LB = -350.514, Loss = 360.224
+[2018-06-06 13:50] Train Step 19575, Epoch 43.5, Batch Size = 256, Examples/Sec = 3804.65, Train LB = -366.273, Loss = 361.025
+[2018-06-06 13:50] Train Step 19600, Epoch 43.6, Batch Size = 256, Examples/Sec = 3810.54, Train LB = -379.060, Loss = 361.665
+Performance on test set:
+  Test Lower Bound = -363.980, Test Loss = 363.980
+[2018-06-06 13:50] Train Step 19625, Epoch 43.6, Batch Size = 256, Examples/Sec = 3816.73, Train LB = -344.981, Loss = 361.210
+[2018-06-06 13:50] Train Step 19650, Epoch 43.7, Batch Size = 256, Examples/Sec = 3797.27, Train LB = -367.980, Loss = 361.572
+[2018-06-06 13:50] Train Step 19675, Epoch 43.7, Batch Size = 256, Examples/Sec = 3800.37, Train LB = -359.593, Loss = 360.928
+[2018-06-06 13:50] Train Step 19700, Epoch 43.8, Batch Size = 256, Examples/Sec = 3801.84, Train LB = -374.640, Loss = 360.380
+[2018-06-06 13:50] Train Step 19725, Epoch 43.8, Batch Size = 256, Examples/Sec = 3821.01, Train LB = -356.117, Loss = 359.875
+[2018-06-06 13:50] Train Step 19750, Epoch 43.9, Batch Size = 256, Examples/Sec = 3810.15, Train LB = -354.479, Loss = 359.914
+[2018-06-06 13:51] Train Step 19775, Epoch 43.9, Batch Size = 256, Examples/Sec = 3806.97, Train LB = -359.176, Loss = 360.458
+[2018-06-06 13:51] Train Step 19800, Epoch 44.0, Batch Size = 256, Examples/Sec = 3801.54, Train LB = -363.470, Loss = 361.321
+Performance on test set:
+  Test Lower Bound = -363.728, Test Loss = 363.728
+[2018-06-06 13:51] Train Step 19825, Epoch 44.1, Batch Size = 256, Examples/Sec = 3732.33, Train LB = -353.913, Loss = 361.069
+[2018-06-06 13:51] Train Step 19850, Epoch 44.1, Batch Size = 256, Examples/Sec = 3819.01, Train LB = -354.936, Loss = 360.313
+[2018-06-06 13:51] Train Step 19875, Epoch 44.2, Batch Size = 256, Examples/Sec = 3819.01, Train LB = -354.200, Loss = 360.689
+[2018-06-06 13:51] Train Step 19900, Epoch 44.2, Batch Size = 256, Examples/Sec = 3731.39, Train LB = -354.747, Loss = 360.413
+[2018-06-06 13:51] Train Step 19925, Epoch 44.3, Batch Size = 256, Examples/Sec = 3800.52, Train LB = -363.846, Loss = 359.913
+[2018-06-06 13:51] Train Step 19950, Epoch 44.3, Batch Size = 256, Examples/Sec = 3803.36, Train LB = -344.669, Loss = 359.749
+[2018-06-06 13:51] Train Step 19975, Epoch 44.4, Batch Size = 256, Examples/Sec = 3734.55, Train LB = -363.340, Loss = 360.122
+[2018-06-06 13:51] Train Step 20000, Epoch 44.4, Batch Size = 256, Examples/Sec = 3807.20, Train LB = -360.286, Loss = 360.929
+Performance on test set:
+  Test Lower Bound = -363.922, Test Loss = 363.922
+[2018-06-06 13:51] Train Step 20025, Epoch 44.5, Batch Size = 256, Examples/Sec = 3812.42, Train LB = -352.007, Loss = 360.700
+[2018-06-06 13:51] Train Step 20050, Epoch 44.6, Batch Size = 256, Examples/Sec = 3793.32, Train LB = -366.557, Loss = 360.549
+[2018-06-06 13:51] Train Step 20075, Epoch 44.6, Batch Size = 256, Examples/Sec = 3820.56, Train LB = -372.797, Loss = 359.946
+[2018-06-06 13:51] Train Step 20100, Epoch 44.7, Batch Size = 256, Examples/Sec = 3820.89, Train LB = -365.963, Loss = 359.720
+[2018-06-06 13:51] Train Step 20125, Epoch 44.7, Batch Size = 256, Examples/Sec = 3799.23, Train LB = -357.570, Loss = 359.645
+[2018-06-06 13:51] Train Step 20150, Epoch 44.8, Batch Size = 256, Examples/Sec = 3804.72, Train LB = -351.780, Loss = 359.744
+[2018-06-06 13:51] Train Step 20175, Epoch 44.8, Batch Size = 256, Examples/Sec = 3815.55, Train LB = -369.420, Loss = 360.209
+[2018-06-06 13:51] Train Step 20200, Epoch 44.9, Batch Size = 256, Examples/Sec = 3792.48, Train LB = -358.288, Loss = 361.180
+Performance on test set:
+  Test Lower Bound = -364.478, Test Loss = 364.478
+[2018-06-06 13:51] Train Step 20225, Epoch 44.9, Batch Size = 256, Examples/Sec = 3801.21, Train LB = -362.232, Loss = 360.765
+[2018-06-06 13:51] Train Step 20250, Epoch 45.0, Batch Size = 256, Examples/Sec = 3733.96, Train LB = -370.376, Loss = 360.347
+[2018-06-06 13:51] Train Step 20275, Epoch 45.1, Batch Size = 256, Examples/Sec = 3791.02, Train LB = -362.193, Loss = 360.587
+[2018-06-06 13:51] Train Step 20300, Epoch 45.1, Batch Size = 256, Examples/Sec = 3802.27, Train LB = -351.321, Loss = 359.815
+[2018-06-06 13:51] Train Step 20325, Epoch 45.2, Batch Size = 256, Examples/Sec = 3793.83, Train LB = -356.282, Loss = 359.472
+[2018-06-06 13:51] Train Step 20350, Epoch 45.2, Batch Size = 256, Examples/Sec = 3818.05, Train LB = -368.027, Loss = 359.426
+[2018-06-06 13:51] Train Step 20375, Epoch 45.3, Batch Size = 256, Examples/Sec = 3821.47, Train LB = -362.111, Loss = 359.826
+[2018-06-06 13:51] Train Step 20400, Epoch 45.3, Batch Size = 256, Examples/Sec = 3815.20, Train LB = -369.623, Loss = 360.626
+Performance on test set:
+  Test Lower Bound = -365.951, Test Loss = 365.951
+[2018-06-06 13:51] Train Step 20425, Epoch 45.4, Batch Size = 256, Examples/Sec = 3795.07, Train LB = -356.813, Loss = 360.993
+[2018-06-06 13:51] Train Step 20450, Epoch 45.4, Batch Size = 256, Examples/Sec = 3778.21, Train LB = -365.521, Loss = 359.585
+[2018-06-06 13:51] Train Step 20475, Epoch 45.5, Batch Size = 256, Examples/Sec = 3830.21, Train LB = -363.087, Loss = 359.954
+[2018-06-06 13:51] Train Step 20500, Epoch 45.6, Batch Size = 256, Examples/Sec = 3796.81, Train LB = -360.401, Loss = 359.859
+[2018-06-06 13:51] Train Step 20525, Epoch 45.6, Batch Size = 256, Examples/Sec = 3743.67, Train LB = -364.192, Loss = 359.910
+[2018-06-06 13:51] Train Step 20550, Epoch 45.7, Batch Size = 256, Examples/Sec = 3809.81, Train LB = -360.742, Loss = 359.680
+[2018-06-06 13:52] Train Step 20575, Epoch 45.7, Batch Size = 256, Examples/Sec = 3830.21, Train LB = -357.031, Loss = 360.395
+[2018-06-06 13:52] Train Step 20600, Epoch 45.8, Batch Size = 256, Examples/Sec = 3794.61, Train LB = -358.868, Loss = 360.654
+Performance on test set:
+  Test Lower Bound = -364.539, Test Loss = 364.539
+[2018-06-06 13:52] Train Step 20625, Epoch 45.8, Batch Size = 256, Examples/Sec = 3830.91, Train LB = -359.835, Loss = 360.136
+[2018-06-06 13:52] Train Step 20650, Epoch 45.9, Batch Size = 256, Examples/Sec = 3583.38, Train LB = -348.667, Loss = 360.202
+[2018-06-06 13:52] Train Step 20675, Epoch 45.9, Batch Size = 256, Examples/Sec = 3653.54, Train LB = -355.831, Loss = 360.343
+[2018-06-06 13:52] Train Step 20700, Epoch 46.0, Batch Size = 256, Examples/Sec = 3674.95, Train LB = -351.819, Loss = 359.599
+[2018-06-06 13:52] Train Step 20725, Epoch 46.1, Batch Size = 256, Examples/Sec = 3803.91, Train LB = -361.858, Loss = 359.598
+[2018-06-06 13:52] Train Step 20750, Epoch 46.1, Batch Size = 256, Examples/Sec = 3789.39, Train LB = -353.848, Loss = 360.062
+[2018-06-06 13:52] Train Step 20775, Epoch 46.2, Batch Size = 256, Examples/Sec = 3734.12, Train LB = -361.315, Loss = 360.215
+[2018-06-06 13:52] Train Step 20800, Epoch 46.2, Batch Size = 256, Examples/Sec = 3242.60, Train LB = -367.678, Loss = 361.060
+Performance on test set:
+  Test Lower Bound = -364.594, Test Loss = 364.594
+[2018-06-06 13:52] Train Step 20825, Epoch 46.3, Batch Size = 256, Examples/Sec = 3690.79, Train LB = -355.668, Loss = 361.270
+[2018-06-06 13:52] Train Step 20850, Epoch 46.3, Batch Size = 256, Examples/Sec = 3804.20, Train LB = -356.110, Loss = 360.268
+[2018-06-06 13:52] Train Step 20875, Epoch 46.4, Batch Size = 256, Examples/Sec = 3655.68, Train LB = -341.869, Loss = 359.754
+[2018-06-06 13:52] Train Step 20900, Epoch 46.4, Batch Size = 256, Examples/Sec = 3804.21, Train LB = -364.574, Loss = 359.303
+[2018-06-06 13:52] Train Step 20925, Epoch 46.5, Batch Size = 256, Examples/Sec = 3757.40, Train LB = -376.442, Loss = 359.154
+[2018-06-06 13:52] Train Step 20950, Epoch 46.6, Batch Size = 256, Examples/Sec = 3804.94, Train LB = -367.602, Loss = 359.874
+[2018-06-06 13:52] Train Step 20975, Epoch 46.6, Batch Size = 256, Examples/Sec = 3789.56, Train LB = -379.959, Loss = 360.184
+[2018-06-06 13:52] Train Step 21000, Epoch 46.7, Batch Size = 256, Examples/Sec = 3826.72, Train LB = -354.368, Loss = 360.685
+Performance on test set:
+  Test Lower Bound = -364.787, Test Loss = 364.787
+[2018-06-06 13:52] Train Step 21025, Epoch 46.7, Batch Size = 256, Examples/Sec = 3473.21, Train LB = -368.747, Loss = 360.835
+[2018-06-06 13:52] Train Step 21050, Epoch 46.8, Batch Size = 256, Examples/Sec = 3410.97, Train LB = -352.583, Loss = 360.259
+[2018-06-06 13:52] Train Step 21075, Epoch 46.8, Batch Size = 256, Examples/Sec = 3786.75, Train LB = -351.101, Loss = 359.973
+[2018-06-06 13:52] Train Step 21100, Epoch 46.9, Batch Size = 256, Examples/Sec = 3803.52, Train LB = -366.375, Loss = 359.614
+[2018-06-06 13:52] Train Step 21125, Epoch 46.9, Batch Size = 256, Examples/Sec = 3762.81, Train LB = -376.238, Loss = 359.361
+[2018-06-06 13:52] Train Step 21150, Epoch 47.0, Batch Size = 256, Examples/Sec = 3808.32, Train LB = -364.644, Loss = 359.608
+[2018-06-06 13:52] Train Step 21175, Epoch 47.1, Batch Size = 256, Examples/Sec = 3800.09, Train LB = -367.178, Loss = 359.872
+[2018-06-06 13:52] Train Step 21200, Epoch 47.1, Batch Size = 256, Examples/Sec = 3802.90, Train LB = -349.730, Loss = 360.608
+Performance on test set:
+  Test Lower Bound = -364.546, Test Loss = 364.546
+[2018-06-06 13:52] Train Step 21225, Epoch 47.2, Batch Size = 256, Examples/Sec = 3797.43, Train LB = -353.298, Loss = 359.764
+[2018-06-06 13:52] Train Step 21250, Epoch 47.2, Batch Size = 256, Examples/Sec = 3802.23, Train LB = -359.033, Loss = 359.628
+[2018-06-06 13:52] Train Step 21275, Epoch 47.3, Batch Size = 256, Examples/Sec = 3787.33, Train LB = -348.636, Loss = 359.565
+[2018-06-06 13:52] Train Step 21300, Epoch 47.3, Batch Size = 256, Examples/Sec = 3809.92, Train LB = -362.336, Loss = 359.265
+[2018-06-06 13:52] Train Step 21325, Epoch 47.4, Batch Size = 256, Examples/Sec = 3804.76, Train LB = -360.029, Loss = 359.600
+[2018-06-06 13:53] Train Step 21350, Epoch 47.4, Batch Size = 256, Examples/Sec = 3801.10, Train LB = -359.345, Loss = 359.355
+[2018-06-06 13:53] Train Step 21375, Epoch 47.5, Batch Size = 256, Examples/Sec = 3799.24, Train LB = -371.013, Loss = 359.963
+[2018-06-06 13:53] Train Step 21400, Epoch 47.6, Batch Size = 256, Examples/Sec = 3804.16, Train LB = -362.434, Loss = 360.862
+Performance on test set:
+  Test Lower Bound = -363.893, Test Loss = 363.893
+[2018-06-06 13:53] Train Step 21425, Epoch 47.6, Batch Size = 256, Examples/Sec = 3754.00, Train LB = -346.140, Loss = 360.510
+[2018-06-06 13:53] Train Step 21450, Epoch 47.7, Batch Size = 256, Examples/Sec = 3812.02, Train LB = -364.338, Loss = 359.937
+[2018-06-06 13:53] Train Step 21475, Epoch 47.7, Batch Size = 256, Examples/Sec = 3774.92, Train LB = -361.163, Loss = 359.980
+[2018-06-06 13:53] Train Step 21500, Epoch 47.8, Batch Size = 256, Examples/Sec = 3791.92, Train LB = -355.722, Loss = 359.623
+[2018-06-06 13:53] Train Step 21525, Epoch 47.8, Batch Size = 256, Examples/Sec = 3788.32, Train LB = -354.455, Loss = 359.370
+[2018-06-06 13:53] Train Step 21550, Epoch 47.9, Batch Size = 256, Examples/Sec = 3809.23, Train LB = -354.400, Loss = 359.337
+[2018-06-06 13:53] Train Step 21575, Epoch 47.9, Batch Size = 256, Examples/Sec = 3795.79, Train LB = -366.182, Loss = 359.546
+[2018-06-06 13:53] Train Step 21600, Epoch 48.0, Batch Size = 256, Examples/Sec = 3763.71, Train LB = -359.445, Loss = 360.887
+Performance on test set:
+  Test Lower Bound = -364.826, Test Loss = 364.826
+[2018-06-06 13:53] Train Step 21625, Epoch 48.1, Batch Size = 256, Examples/Sec = 3623.09, Train LB = -349.581, Loss = 360.687
+[2018-06-06 13:53] Train Step 21650, Epoch 48.1, Batch Size = 256, Examples/Sec = 3448.51, Train LB = -361.249, Loss = 360.378
+[2018-06-06 13:53] Train Step 21675, Epoch 48.2, Batch Size = 256, Examples/Sec = 3379.18, Train LB = -350.772, Loss = 359.449
+[2018-06-06 13:53] Train Step 21700, Epoch 48.2, Batch Size = 256, Examples/Sec = 3455.90, Train LB = -353.396, Loss = 359.221
+[2018-06-06 13:53] Train Step 21725, Epoch 48.3, Batch Size = 256, Examples/Sec = 3442.05, Train LB = -370.644, Loss = 358.968
+[2018-06-06 13:53] Train Step 21750, Epoch 48.3, Batch Size = 256, Examples/Sec = 3471.14, Train LB = -353.297, Loss = 359.079
+[2018-06-06 13:53] Train Step 21775, Epoch 48.4, Batch Size = 256, Examples/Sec = 3473.91, Train LB = -365.531, Loss = 359.522
+[2018-06-06 13:53] Train Step 21800, Epoch 48.4, Batch Size = 256, Examples/Sec = 3398.02, Train LB = -366.404, Loss = 360.517
+Performance on test set:
+  Test Lower Bound = -364.607, Test Loss = 364.607
+[2018-06-06 13:53] Train Step 21825, Epoch 48.5, Batch Size = 256, Examples/Sec = 3368.07, Train LB = -364.754, Loss = 360.161
+[2018-06-06 13:53] Train Step 21850, Epoch 48.6, Batch Size = 256, Examples/Sec = 3387.63, Train LB = -361.887, Loss = 359.776
+[2018-06-06 13:53] Train Step 21875, Epoch 48.6, Batch Size = 256, Examples/Sec = 3338.20, Train LB = -348.342, Loss = 359.491
+[2018-06-06 13:53] Train Step 21900, Epoch 48.7, Batch Size = 256, Examples/Sec = 3433.44, Train LB = -353.600, Loss = 359.194
+[2018-06-06 13:53] Train Step 21925, Epoch 48.7, Batch Size = 256, Examples/Sec = 3357.65, Train LB = -351.018, Loss = 358.619
+[2018-06-06 13:53] Train Step 21950, Epoch 48.8, Batch Size = 256, Examples/Sec = 3394.82, Train LB = -359.549, Loss = 358.958
+[2018-06-06 13:53] Train Step 21975, Epoch 48.8, Batch Size = 256, Examples/Sec = 3414.43, Train LB = -355.949, Loss = 359.457
+[2018-06-06 13:53] Train Step 22000, Epoch 48.9, Batch Size = 256, Examples/Sec = 3449.35, Train LB = -375.536, Loss = 359.964
+Performance on test set:
+  Test Lower Bound = -365.388, Test Loss = 365.388
+[2018-06-06 13:53] Train Step 22025, Epoch 48.9, Batch Size = 256, Examples/Sec = 3500.47, Train LB = -359.404, Loss = 359.988
+[2018-06-06 13:53] Train Step 22050, Epoch 49.0, Batch Size = 256, Examples/Sec = 3491.59, Train LB = -357.777, Loss = 359.384
+[2018-06-06 13:53] Train Step 22075, Epoch 49.1, Batch Size = 256, Examples/Sec = 3370.02, Train LB = -359.271, Loss = 358.843
+[2018-06-06 13:54] Train Step 22100, Epoch 49.1, Batch Size = 256, Examples/Sec = 3482.66, Train LB = -356.485, Loss = 359.074
+[2018-06-06 13:54] Train Step 22125, Epoch 49.2, Batch Size = 256, Examples/Sec = 3417.02, Train LB = -368.629, Loss = 358.318
+[2018-06-06 13:54] Train Step 22150, Epoch 49.2, Batch Size = 256, Examples/Sec = 3512.71, Train LB = -368.209, Loss = 358.190
+[2018-06-06 13:54] Train Step 22175, Epoch 49.3, Batch Size = 256, Examples/Sec = 3698.35, Train LB = -370.729, Loss = 358.695
+[2018-06-06 13:54] Train Step 22200, Epoch 49.3, Batch Size = 256, Examples/Sec = 3452.24, Train LB = -362.725, Loss = 359.952
+Performance on test set:
+  Test Lower Bound = -364.445, Test Loss = 364.445
+[2018-06-06 13:54] Train Step 22225, Epoch 49.4, Batch Size = 256, Examples/Sec = 3329.39, Train LB = -348.444, Loss = 359.686
+[2018-06-06 13:54] Train Step 22250, Epoch 49.4, Batch Size = 256, Examples/Sec = 3446.29, Train LB = -357.577, Loss = 359.412
+[2018-06-06 13:54] Train Step 22275, Epoch 49.5, Batch Size = 256, Examples/Sec = 3449.20, Train LB = -349.215, Loss = 359.455
+[2018-06-06 13:54] Train Step 22300, Epoch 49.6, Batch Size = 256, Examples/Sec = 3444.46, Train LB = -348.349, Loss = 359.058
+[2018-06-06 13:54] Train Step 22325, Epoch 49.6, Batch Size = 256, Examples/Sec = 3427.45, Train LB = -352.843, Loss = 358.846
+[2018-06-06 13:54] Train Step 22350, Epoch 49.7, Batch Size = 256, Examples/Sec = 3439.62, Train LB = -354.308, Loss = 358.411
+[2018-06-06 13:54] Train Step 22375, Epoch 49.7, Batch Size = 256, Examples/Sec = 3418.94, Train LB = -367.418, Loss = 358.717
+[2018-06-06 13:54] Train Step 22400, Epoch 49.8, Batch Size = 256, Examples/Sec = 3436.61, Train LB = -370.181, Loss = 359.837
+Performance on test set:
+  Test Lower Bound = -363.450, Test Loss = 363.450
+[2018-06-06 13:54] Train Step 22425, Epoch 49.8, Batch Size = 256, Examples/Sec = 3438.41, Train LB = -356.702, Loss = 359.710
+[2018-06-06 13:54] Train Step 22450, Epoch 49.9, Batch Size = 256, Examples/Sec = 3406.11, Train LB = -363.268, Loss = 359.418
+[2018-06-06 13:54] Train Step 22475, Epoch 49.9, Batch Size = 256, Examples/Sec = 3430.30, Train LB = -349.562, Loss = 359.001
+Model saved in path: /home/dico/Documents/models/model3030.ckpt

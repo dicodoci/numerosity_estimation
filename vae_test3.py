@@ -25,12 +25,12 @@ class VariationalAutoencoder(object):
             # ConvNet
             # 1st hidden layer
             # x = tf.Print(x, [tf.shape(x)], message="x: ", summarize=10)
-            conv1 = tf.layers.conv2d(x, 64, [4, 4], strides=(2, 2), padding='valid')
+            conv1 = tf.layers.conv2d(x, 32, [4, 4], strides=(2, 2), padding='same')
             # conv1 = tf.Print(conv1, [tf.shape(conv1)], message="conv1: ", summarize=10)
             lrelu1 = lrelu(conv1, 0.2)
 
             # 2nd hidden layer
-            conv2 = tf.layers.conv2d(lrelu1, 128, [4, 4], strides=(2, 2), padding='same',
+            conv2 = tf.layers.conv2d(lrelu1, 64, [4, 4], strides=(2, 2), padding='same',
                                      kernel_initializer=self.kernel_initializer)
             # conv2 = tf.Print(conv2, [tf.shape(conv2)], message="conv2: ", summarize=10)
             lrelu2 = lrelu(tf.layers.batch_normalization(conv2, training=is_train), 0.2)
@@ -49,7 +49,7 @@ class VariationalAutoencoder(object):
             lrelu4_flat = tf.layers.flatten(lrelu4)
 
             # Intermediate dense layer
-            dense = tf.layers.dense(lrelu4_flat, 200, activation=tf.nn.relu, kernel_initializer=self.kernel_initializer)
+            dense = tf.layers.dense(lrelu4_flat, 100, activation=tf.nn.relu, kernel_initializer=self.kernel_initializer)
             # dense = tf.Print(dense, [tf.shape(dense)], message="dense: ", summarize=10)
 
 
@@ -69,32 +69,37 @@ class VariationalAutoencoder(object):
 
     def decode(self, z, is_train=True):
         with tf.variable_scope("decoder", reuse=tf.AUTO_REUSE):
-            dense = tf.layers.dense(z, units=200, kernel_initializer=self.kernel_initializer, activation=tf.nn.relu)
-            decoder_expand = tf.layers.dense(dense, units=(128 * 4 * 4), kernel_initializer=self.kernel_initializer,
+            dense = tf.layers.dense(z, units=100, kernel_initializer=self.kernel_initializer, activation=tf.nn.relu)
+            decoder_expand = tf.layers.dense(dense, units=(128 * 2 * 2), kernel_initializer=self.kernel_initializer,
                                              activation=tf.nn.relu)
-            decoder_expand = tf.reshape(decoder_expand, [-1, 4, 4, 128])
+            decoder_expand = tf.reshape(decoder_expand, [-1, 2, 2, 128])
             # decoder_expand = tf.Print(decoder_expand, [tf.shape(decoder_expand)], message="decoder_expand: ", summarize=10)
 
             # 1st hidden layer
-            conv1 = tf.layers.conv2d_transpose(decoder_expand, 128, [4, 4], strides=(1, 1), padding='valid',
+            conv1 = tf.layers.conv2d_transpose(decoder_expand, 128, [4, 4], strides=(2, 2), padding='same',
                                                kernel_initializer=self.kernel_initializer)
             # conv1 = tf.Print(conv1, [tf.shape(conv1)], message="conv1: ", summarize=10)
             lrelu1 = lrelu(tf.layers.batch_normalization(conv1, training=is_train), 0.2)
 
             # 2nd hidden layer
-            conv2 = tf.layers.conv2d_transpose(lrelu1, 64, [4, 4], strides=(2, 2), padding='same',
+            conv2 = tf.layers.conv2d_transpose(lrelu1, 64, [4, 4], strides=(1, 1), padding='valid',
                                                kernel_initializer=self.kernel_initializer)
             # conv2 = tf.Print(conv2, [tf.shape(conv2)], message="conv2: ", summarize=10)
             lrelu2 = lrelu(tf.layers.batch_normalization(conv2, training=is_train), 0.2)
 
             # 3rd hidden layer
-            conv3 = tf.layers.conv2d_transpose(lrelu2, 64, [4, 4], strides=(2, 2), padding='valid',
+            conv3 = tf.layers.conv2d_transpose(lrelu2, 64, [4, 4], strides=(2, 2), padding='same',
                                                kernel_initializer=self.kernel_initializer)
             # conv3 = tf.Print(conv3, [tf.shape(conv3)], message="conv3: ", summarize=10)
             lrelu3 = lrelu(tf.layers.batch_normalization(conv3, training=is_train), 0.2)
 
+            conv4 = tf.layers.conv2d_transpose(lrelu3, 32, [4, 4], strides=(2, 2), padding='valid',
+                                               kernel_initializer=self.kernel_initializer)
+            # conv4 = tf.Print(conv4, [tf.shape(conv4)], message="conv3: ", summarize=10)
+            lrelu4 = lrelu(tf.layers.batch_normalization(conv4, training=is_train), 0.2)
+
             # Logits for Bernoulli distribution
-            bernoulli_logits = tf.layers.conv2d_transpose(lrelu3, 1, kernel_size=3, strides=1, padding='same',
+            bernoulli_logits = tf.layers.conv2d_transpose(lrelu4, 1, kernel_size=3, strides=1, padding='same',
                                                           kernel_initializer=self.kernel_initializer)
             # bernoulli_logits = tf.Print(bernoulli_logits, [tf.shape(bernoulli_logits)], message="bernoulli_logits: ", summarize=10)
 
@@ -126,7 +131,7 @@ class VariationalAutoencoder(object):
         # Compute the lower bound
         lower_bound = -kl_divergence + log_prop_data
 
-        return lower_bound
+        return  lower_bound
 
     def mean_x_given_z(self, z):
         # Returns tensor containing the mean of p(X|Z=z) for each of the given points
@@ -137,6 +142,13 @@ class VariationalAutoencoder(object):
         z_samples = self._sample_z(mean=0.0, sigma=1.0, shape=(n_samples, self.z_dim))
         return tf.distributions.Bernoulli(probs=self.mean_x_given_z(z_samples)).sample()
 
+    def test_coder(self, x):
+        # Encoder: both mean and variance have sodimension (n_samples, z_dim)
+        z_mean, z_sigma = self.encode(x)
+        z_sample = self._sample_z(z_mean, z_sigma)
+        p_x_given_z_logits = self.decode(z_sample)
+
+        return  x, p_x_given_z_logits
 
 # num_images = 51200
 # (x_size, y_size) = (30, 30)

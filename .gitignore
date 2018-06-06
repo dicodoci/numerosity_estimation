@@ -1,0 +1,7 @@
+generated_images/
+logs/
+models/
+MNIST_data/
+board/
+board./
+gen_images.zip
