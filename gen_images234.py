@@ -71,20 +71,20 @@ def generate_example(im_size=(30,30), min_obj=1, max_obj=32, sum_surfaces=[32, 6
 
 if __name__ == "__main__":
 
-    # im_per_class = 400
-    # surfaces = [x*9 for x in [32, 64, 96, 128, 160, 192, 224, 256]]
-    # for sum_surface in surfaces:
-    #     for num_obj in range(0, 21):
-    #         sum_tries = 0
-    #         directory = "/home/dico/Documents/gen_img_9090/surf" + str(sum_surface) + "_obj"+ str(num_obj)
-    #         print(directory)
-    #         if not os.path.exists(directory):
-    #             os.makedirs(directory)
-    #         for i in range(im_per_class):
-    #             image, tries = generate_example(min_obj=num_obj, max_obj=num_obj, sum_surfaces=[sum_surface])
-    #             sum_tries += tries
-    #             cv2.imwrite(directory +"/image_"+str(sum_surface)+"_"+str(num_obj)+"_"+str(i)+".png", image)
-    #         print("average number of tries per image: " + str(int(float(sum_tries)/im_per_class*100)/100.0))
+    im_per_class = 2000
+    surfaces = [x*9 for x in [32, 64, 96, 128, 160, 192, 224, 256]]
+    for sum_surface in surfaces:
+        for num_obj in range(0, 21):
+            sum_tries = 0
+            directory = "/home/dico/Documents/gen_img_9090/surf" + str(sum_surface) + "_obj"+ str(num_obj)
+            print(directory)
+            if not os.path.exists(directory):
+                os.makedirs(directory)
+            for i in range(im_per_class):
+                image, tries = generate_example(im_size=(90,90), min_obj=num_obj, max_obj=num_obj, sum_surfaces=[sum_surface])
+                sum_tries += tries
+                cv2.imwrite(directory +"/image_"+str(sum_surface)+"_"+str(num_obj)+"_"+str(i)+".png", image)
+            print("average number of tries per image: " + str(int(float(sum_tries)/im_per_class*100)/100.0))
 
 
     im_per_class = 500
@@ -97,7 +97,7 @@ if __name__ == "__main__":
             if not os.path.exists(directory):
                 os.makedirs(directory)
             for i in range(im_per_class):
-                image, tries = generate_example(min_obj=num_obj, max_obj=num_obj, sum_surfaces=[sum_surface])
+                image, tries = generate_example(im_size=(30,30), min_obj=num_obj, max_obj=num_obj, sum_surfaces=[sum_surface])
                 sum_tries += tries
                 cv2.imwrite(directory +"/image_"+str(sum_surface)+"_"+str(num_obj)+"_"+str(i)+".png", image)
             print("average number of tries per image: " + str(int(float(sum_tries)/im_per_class*100)/100.0))
