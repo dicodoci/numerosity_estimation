@@ -111,3 +111,9 @@ class VariationalAutoencoder(object):
         # Generate N samples from your model
         z_samples = self._sample_z(mean=0.0, sigma=1.0, shape=(n_samples, self.z_dim))
         return tf.distributions.Bernoulli(probs=self.mean_x_given_z(z_samples)).sample()
+
+    def test_coder(self, x):
+        # Encoder: both mean and variance have sodimension (n_samples, z_dim)
+        z_mean, z_sigma = self.encode(x)
+        z_sample = self._sample_z(z_mean, z_sigma)
+        return x, tf.distributions.Bernoulli(probs=self.mean_x_given_z(z_sample)).sample()

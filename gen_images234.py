@@ -36,7 +36,7 @@ def draw_square(image, height, width):
         if not options:
             return None
     p1 = (start_x, start_y)
-    p2 = (start_x + width, start_y + height)
+    p2 = (start_x + width-1, start_y + height-1)
     cv2.rectangle(image, p1, p2, 1, cv_FILLED)
     return image
 
@@ -71,7 +71,7 @@ def generate_example(im_size=(30,30), min_obj=1, max_obj=32, sum_surfaces=[32, 6
 
 if __name__ == "__main__":
 
-    im_per_class = 2000
+    im_per_class = 5000
     surfaces = [x*9 for x in [32, 64, 96, 128, 160, 192, 224, 256]]
     for sum_surface in surfaces:
         for num_obj in range(0, 21):
@@ -87,7 +87,7 @@ if __name__ == "__main__":
             print("average number of tries per image: " + str(int(float(sum_tries)/im_per_class*100)/100.0))
 
 
-    im_per_class = 500
+    im_per_class = 5000
     surfaces = [32, 64, 96, 128, 160, 192, 224, 256]
     for sum_surface in surfaces:
         for num_obj in range(1, 33):

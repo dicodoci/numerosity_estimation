@@ -7,7 +7,9 @@ import tensorflow as tf
 import cv2
 
 from vae9090 import VariationalAutoencoder
+from random import shuffle
 
+import sys
 
 # num_images = 8*32*200
 # (x_size, y_size) = (30, 30)
@@ -35,8 +37,8 @@ from vae9090 import VariationalAutoencoder
 def load_images(binarize=True):
     count = 0
     surfaces = [i * 9 for i in [32, 64, 96, 128, 160, 192, 224, 256]]
-    object_nums = range(0, 20)
-    im_per_class = 300
+    object_nums = range(0, 21)
+    im_per_class = 500
     num_images = len(surfaces) * len(object_nums) * im_per_class
     (x_size, y_size) = (90, 90)
     x = np.empty((num_images, y_size, x_size, 1), int)
@@ -56,15 +58,32 @@ def load_images(binarize=True):
         x_test  = (x_test>0.5).astype(x_test.dtype)
     return x_train, x_test
 
-# def load_mnist_images(binarize=True):
-#     from tensorflow.examples.tutorials.mnist import input_data
-#     mnist = input_data.read_data_sets("/tmp/data/", one_hot=False)
-#     x_train = mnist.train.images.reshape(-1, 28, 28, 1)
-#     x_test  = mnist.test.images.reshape(-1, 28, 28, 1)
-#     if binarize:
-#         x_train = (x_train>0.5).astype(x_train.dtype)
-#         x_test  = (x_test>0.5).astype(x_test.dtype)
-#     return x_train, x_test
+def get_image_filenames():
+    im_per_class = 5000
+    filenames = []
+    surfaces = [i * 9 for i in [32, 64, 96, 128, 160, 192, 224, 256]]
+    num_obj_list = list(range(0, 21))
+    shuffle(surfaces)
+    shuffle(num_obj_list)
+    for sum_surface in surfaces:
+        for num_obj in num_obj_list:
+            directory = "/home/dvanleeuwen/data/gen_img_9090/surf" + str(sum_surface) + "_obj" + str(num_obj)
+            for i in range(im_per_class):
+                filenames.append(directory + "/image_" + str(sum_surface) + "_" + str(num_obj) + "_" + str(i) + ".png")
+    test_size = 4000
+    if int(len(filenames) * 0.9) < test_size:
+        test_size = int(len(filenames) * 0.9)
+    np.random.shuffle(filenames)
+    train_filenames = filenames[test_size:]
+    test_filenames = filenames[:test_size]
+    return train_filenames, test_filenames
+
+
+def _parse_function(filename):
+    image_string = tf.read_file(filename)
+    image_decoded = tf.cast(tf.image.decode_png(image_string, 1), tf.float32)
+    return image_decoded
+
 
 # show samples
 def show_samples(sess, vae):
@@ -78,27 +97,41 @@ def show_samples(sess, vae):
 def train_vae(config):
     # save_path = "/models/model30.ckpt"
     save_path = config.model_path + "model" + config.model_name + ".ckpt"
-    load_model = False
+    load_model = True
     save_model = True
 
     # Load dataset
-    x_train, x_test = load_images(binarize=True)
-    print(x_train.shape)
-    print(x_test.shape)
-    print("z_dim: %d  " % config.z_dim)
-    n_samples, im_height, im_width, _ = x_train.shape
+    # x_train, x_test = load_images(binarize=True)
+    # print(x_train.shape)
+    # print(x_test.shape)
+    # print("z_dim: %d  " % config.z_dim)
+    # n_samples, im_height, im_width, _ = x_train.shape
+    train_filenames, test_filenames = get_image_filenames()
 
     # Data pipeline
-    data_train = tf.data.Dataset.from_tensor_slices(x_train)
-    data_train = data_train.shuffle(buffer_size=10000)
+
+    n_samples, im_height, im_width = (len(train_filenames), 90, 90)
+    data_train = tf.data.Dataset.from_tensor_slices(train_filenames)
+    # dataset = dataset.shuffle(len(filenames))
+    data_train = data_train.map(_parse_function)
+    # data_train = tf.data.Dataset.from_tensor_slices(x_train)
+    # data_train = data_train.shuffle(buffer_size=10000)
     data_train = data_train.repeat(config.num_epochs)
     data_train = data_train.batch(config.batch_size)
 
-    data_test = tf.data.Dataset.from_tensor_slices(x_test).batch(config.batch_size)
-    iterator = tf.data.Iterator.from_structure(data_train.output_types, data_train.output_shapes)
-    im_batch = iterator.get_next()
-    init_train_data_op = iterator.make_initializer(data_train)
-    init_test_data_op  = iterator.make_initializer(data_test)
+    data_test = tf.data.Dataset.from_tensor_slices(test_filenames)
+    data_test = data_test.map(_parse_function)
+    data_test = data_test.batch(config.batch_size)
+    handle = tf.placeholder(tf.string, shape=[])
+    iterator = tf.data.Iterator.from_string_handle(handle, data_train.output_types, data_train.output_shapes)
+    # iterator = tf.data.Iterator.from_structure(data_train.output_types, data_train.output_shapes)
+    im_batch = tf.reshape(iterator.get_next(), [-1, im_height, im_width, 1])
+    # init_train_data_op = iterator.make_initializer(data_train)
+    # init_test_data_op  = iterator.make_initializer(data_test)
+
+    iter_train = data_train.make_one_shot_iterator()
+    iter_test = data_test.make_initializable_iterator()
+
 
     # Build VAE model
     model = VariationalAutoencoder(
@@ -113,6 +146,7 @@ def train_vae(config):
 
     lower_bound = model.lower_bound(im_batch)
     loss = -tf.reduce_mean(lower_bound)
+    test_code = model.test_coder(im_batch)
 
     ema = tf.train.ExponentialMovingAverage(decay=0.99, zero_debias=True)
     main_averages_op = ema.apply([loss])
@@ -153,16 +187,19 @@ def train_vae(config):
     saver = tf.train.Saver()
     sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options, log_device_placement=config.log_device_placement))
 
+    # sess.run(init_train_data_op)  # Initialize the variables of the data-loader.
     # load model
     if load_model:
         saver.restore(sess, save_path)
         print("Model restored.")
-
-    sess.run(init_train_data_op) # Initialize the variables of the data-loader.
-    sess.run(tf.global_variables_initializer())  # Initialize the model parameters.
+    else:
+        sess.run(tf.global_variables_initializer())  # Initialize the model parameters.
 
     num_steps = int((config.num_epochs * n_samples) / config.batch_size)
     examples_per_second = 0
+
+    train_handle = sess.run(iter_train.string_handle())
+    test_handle = sess.run(iter_test.string_handle())
 
     train_ops = {
         'train_op': train_op,
@@ -171,13 +208,22 @@ def train_vae(config):
         'train_summary': train_scalar_summaries_op
     }
 
+    # (original, decoded) = sess.run(test_code)
+    # print("for fucks sake")
+    # while True:
+    #     for i in range(config.batch_size):
+    #         cv2.imshow("original", np.squeeze(original[i] * 255, axis=-1).astype(np.uint8))
+    #         cv2.imshow("decoded", np.squeeze(decoded[i] * 255, axis=-1).astype(np.uint8))
+    #         if cv2.waitKey(0) == ord('q'):
+    #             break
+
     for step in range(num_steps):
 
         epoch = (step*config.batch_size)/float(n_samples)
         t1 = time.time()
 
         # Training operation
-        res = sess.run(train_ops)
+        res = sess.run(train_ops, feed_dict={handle: train_handle})
 
         t2 = time.time()
         examples_per_second = config.batch_size/float(t2-t1)
@@ -198,12 +244,13 @@ def train_vae(config):
         if step % config.test_every == 0 and step > 0:
 
             # Switch to test data
-            sess.run(init_test_data_op)
+            # sess.run(init_test_data_op)
+            sess.run(iter_test.initializer)
 
             test_losses, test_lower_bounds = [], []
             while True:
                 try:
-                    test_loss, test_lower_bound = sess.run([loss, lower_bound])
+                    test_loss, test_lower_bound = sess.run([loss, lower_bound], feed_dict={handle: test_handle})
                     test_losses.append(test_loss)
                     test_lower_bounds.append(np.mean(test_lower_bound))
                 except tf.errors.OutOfRangeError:
@@ -217,7 +264,7 @@ def train_vae(config):
             summary_writer.add_summary(test_summary_str, step)
 
             # Switch to train data
-            sess.run(init_train_data_op)
+            # sess.run(init_train_data_op)
     if save_model:
         save_path = saver.save(sess, save_path)
         print("Model saved in path: %s" % save_path)
@@ -236,8 +283,8 @@ if __name__ == '__main__':
 
     # Training params
     parser.add_argument('--batch_size', type=int, default=32, help='Number of examples to process in a batch')#default=100
-    parser.add_argument('--learning_rate', type=float, default=0.005, help='Learning rate')#default=0.003
-    parser.add_argument('--num_epochs', type=int, default=30, help='Number of training epochs')#default=1000
+    parser.add_argument('--learning_rate', type=float, default=0.0005, help='Learning rate')#default=0.003
+    parser.add_argument('--num_epochs', type=int, default=1, help='Number of training epochs')#default=1000
 
     # Print, sampling and testing frequency
     parser.add_argument('--print_every', type=int, default=25, help='Frequency of printing model train performance')
@@ -249,7 +296,7 @@ if __name__ == '__main__':
     parser.add_argument('--log_device_placement', type=bool, default=False, help='Log device placement for debugging')
     parser.add_argument('--summary_path', type=str, default="/home/dvanleeuwen/data/logs/", help='Output path for summaries')#default="./summaries/"
     parser.add_argument('--model_path', type=str, default="/home/dvanleeuwen/data/models/", help='Output path for the model')
-    parser.add_argument('--model_name', type=str, default="9090", help='Output name for the model')
+    parser.add_argument('--model_name', type=str, default="9090_0_20", help='Output name for the model')
 
     config = parser.parse_args()
 

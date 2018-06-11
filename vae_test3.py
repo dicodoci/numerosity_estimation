@@ -48,6 +48,7 @@ class VariationalAutoencoder(object):
             lrelu4 = lrelu(tf.layers.batch_normalization(conv4, training=is_train), 0.2)
             lrelu4_flat = tf.layers.flatten(lrelu4)
 
+
             # Intermediate dense layer
             dense = tf.layers.dense(lrelu4_flat, 100, activation=tf.nn.relu, kernel_initializer=self.kernel_initializer)
             # dense = tf.Print(dense, [tf.shape(dense)], message="dense: ", summarize=10)
@@ -111,6 +112,7 @@ class VariationalAutoencoder(object):
         return tf.random_normal(shape=shape, mean=mean, stddev=sigma)
 
     def lower_bound(self, x):
+        # x = tf.Print(x, [tf.shape(x)], message="x: ", summarize=10)
         # Encoder: both mean and variance have sodimension (n_samples, z_dim)
         z_mean, z_sigma = self.encode(x)
 

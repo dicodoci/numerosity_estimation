@@ -5,10 +5,11 @@ from datetime import datetime
 import numpy as np
 import tensorflow as tf
 import cv2
+
+from vae9090 import VariationalAutoencoder
 from random import shuffle
 
-from vae_original import VariationalAutoencoder
-
+import sys
 
 # num_images = 8*32*200
 # (x_size, y_size) = (30, 30)
@@ -35,19 +36,18 @@ from vae_original import VariationalAutoencoder
 
 def load_images(binarize=True):
     count = 0
+    surfaces = [i * 9 for i in [32, 64, 96, 128, 160, 192, 224, 256]]
+    object_nums = range(0, 20)
     im_per_class = 500
-    num_images = 8 * 32 * im_per_class
-    (x_size, y_size) = (30, 30)
+    num_images = len(surfaces) * len(object_nums) * im_per_class
+    (x_size, y_size) = (90, 90)
     x = np.empty((num_images, y_size, x_size, 1), int)
     y = np.empty((num_images,), int)
-    surfaces = [32, 64, 96, 128, 160, 192, 224, 256]
     for sum_surface in surfaces:
-        for num_obj in range(1, 33):
-            directory = "/home/dvanleeuwen/data/gen_img_3030/surf" + str(sum_surface) + "_obj"+ str(num_obj)
+        for num_obj in object_nums:
+            directory = "/home/dvanleeuwen/data/gen_img_9090/surf" + str(sum_surface) + "_obj"+ str(num_obj)
             for i in range(im_per_class):
                 temp_data = cv2.imread(directory + "/image_" + str(sum_surface) + "_" + str(num_obj) + "_" + str(i) + ".png", 0)
-                if temp_data is None:
-                    print("could not load image: " + directory + "/image_" + str(sum_surface) + "_" + str(num_obj) + "_" + str(i) + ".png")
                 x[count] = np.expand_dims(temp_data, -1)
                 y[count] = num_obj
                 count += 1
@@ -58,26 +58,16 @@ def load_images(binarize=True):
         x_test  = (x_test>0.5).astype(x_test.dtype)
     return x_train, x_test
 
-# def load_mnist_images(binarize=True):
-#     from tensorflow.examples.tutorials.mnist import input_data
-#     mnist = input_data.read_data_sets("/tmp/data/", one_hot=False)
-#     x_train = mnist.train.images.reshape(-1, 28, 28, 1)
-#     x_test  = mnist.test.images.reshape(-1, 28, 28, 1)
-#     if binarize:
-#         x_train = (x_train>0.5).astype(x_train.dtype)
-#         x_test  = (x_test>0.5).astype(x_test.dtype)
-#     return x_train, x_test
-
 def get_image_filenames():
     im_per_class = 5000
     filenames = []
-    surfaces = [32, 64, 96, 128, 160, 192, 224, 256]
-    num_obj_list = list(range(1, 33))
+    surfaces = [i * 9 for i in [32, 64, 96, 128, 160, 192, 224, 256]]
+    num_obj_list = list(range(0, 21))
     shuffle(surfaces)
     shuffle(num_obj_list)
     for sum_surface in surfaces:
         for num_obj in num_obj_list:
-            directory = "/home/dvanleeuwen/data/gen_img_3030/surf" + str(sum_surface) + "_obj" + str(num_obj)
+            directory = "/home/dvanleeuwen/data/gen_img_9090/surf" + str(sum_surface) + "_obj" + str(num_obj)
             for i in range(im_per_class):
                 filenames.append(directory + "/image_" + str(sum_surface) + "_" + str(num_obj) + "_" + str(i) + ".png")
     np.random.shuffle(filenames)
@@ -89,24 +79,6 @@ def _parse_function(filename):
     image_decoded = tf.cast(tf.image.decode_png(image_string, 1), tf.float32)
     return image_decoded
 
-# def load_mnist_images(binarize=True):
-#     from tensorflow.examples.tutorials.mnist import input_data
-#     mnist = input_data.read_data_sets("/tmp/data/", one_hot=False)
-#     x_train = mnist.train.images.reshape(-1, 28, 28, 1)
-#     x_test  = mnist.test.images.reshape(-1, 28, 28, 1)
-#     if binarize:
-#         x_train = (x_train>0.5).astype(x_train.dtype)
-#         x_test  = (x_test>0.5).astype(x_test.dtype)
-#     return x_train, x_test
-
-# show samples
-def show_samples(sess, vae):
-    im_samples = sess.run(vae.sample(100))
-    for i in range(100):
-        cv2.imshow("Example", np.squeeze(im_samples[i]*255, axis=-1).astype(np.uint8))
-        if cv2.waitKey(0) == ord('q'):
-            break
-
 
 def train_vae(config):
     # save_path = "/models/model30.ckpt"
@@ -117,7 +89,7 @@ def train_vae(config):
     filenames = get_image_filenames()
 
     # Data pipeline
-    n_samples, im_height, im_width = (len(filenames), 30, 30)
+    n_samples, im_height, im_width = (len(filenames), 90, 90)
     data = tf.data.Dataset.from_tensor_slices(filenames)
     data = data.map(_parse_function)
 
@@ -164,6 +136,7 @@ def train_vae(config):
             continue
         break
 
+
 if __name__ == '__main__':
     print("training...")
 
@@ -171,12 +144,12 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
 
     # Model params
-    parser.add_argument('--z_dim', type=int, default=20, help='Dimensionality of z')#defaul=2
+    parser.add_argument('--z_dim', type=int, default=50, help='Dimensionality of z')#defaul=2
 
     # Training params
-    parser.add_argument('--batch_size', type=int, default=256, help='Number of examples to process in a batch')#default=100
-    parser.add_argument('--learning_rate', type=float, default=0.005, help='Learning rate')#default=0.003
-    parser.add_argument('--num_epochs', type=int, default=10, help='Number of training epochs')#default=1000
+    parser.add_argument('--batch_size', type=int, default=32, help='Number of examples to process in a batch')#default=100
+    parser.add_argument('--learning_rate', type=float, default=0.003, help='Learning rate')#default=0.003
+    parser.add_argument('--num_epochs', type=int, default=2, help='Number of training epochs')#default=1000
 
     # Print, sampling and testing frequency
     parser.add_argument('--print_every', type=int, default=25, help='Frequency of printing model train performance')
@@ -184,11 +157,11 @@ if __name__ == '__main__':
     parser.add_argument('--test_every', type=int, default=200, help='Frequency of testing model performance')
 
     # Misc params
-    parser.add_argument('--gpu_mem_frac', type=float, default=0.7, help='Fraction of GPU memory to allocate')#default=0.5
+    parser.add_argument('--gpu_mem_frac', type=float, default=0.8, help='Fraction of GPU memory to allocate')#default=0.5
     parser.add_argument('--log_device_placement', type=bool, default=False, help='Log device placement for debugging')
     parser.add_argument('--summary_path', type=str, default="/home/dvanleeuwen/data/logs/", help='Output path for summaries')#default="./summaries/"
     parser.add_argument('--model_path', type=str, default="/home/dvanleeuwen/data/models/", help='Output path for the model')
-    parser.add_argument('--model_name', type=str, default="3030", help='Output name for the model')
+    parser.add_argument('--model_name', type=str, default="9090_0_20", help='Output name for the model')
 
     config = parser.parse_args()
 
